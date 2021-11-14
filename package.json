@@ -1,0 +1,24 @@
+{
+  "name": "hypestyle",
+  "version": "0.0.1",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lassev05/HypeStyle.git"
+  },
+  "keywords": [
+    "js",
+    "scss",
+    "css"
+  ],
+  "author": "Lasse Vestergaard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lassev05/HypeStyle/issues"
+  },
+  "homepage": "https://github.com/lassev05/HypeStyle#readme"
+}
