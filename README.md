@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://hypestyle.netlify.app">
-    <img src="https://i.ibb.co/1mLwbLj/icon.png" alt="Bootstrap logo" width="200" height="165">
+    <img src="https://hypestyle.netlify.app/img/icon.png" alt="Bootstrap logo" width="200" height="165">
   </a>
 </p>
 
