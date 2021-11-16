@@ -1,5 +1,5 @@
 {
-  "name": "HypeStyle",
+  "name": "hypestyle",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/lassev05/HypeStyle.git",
@@ -13,6 +13,7 @@
   "scripts": {
     "css": "gulp",
     "vuepress:dev": "npx vuepress dev docs",
-    "vuepress:build": "npx vuepress build docs"
+    "docs:build ": "vuepress build docs",
+    "publish": "docs/.vuepress/dist"
   }
 }
