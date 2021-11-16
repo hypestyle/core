@@ -13,7 +13,7 @@
   "scripts": {
     "css": "gulp",
     "vuepress:dev": "npx vuepress dev docs",
-    "docs:build ": "vuepress build docs",
+    "docs:build ": "npx vuepress build docs",
     "publish": "docs/.vuepress/dist"
   }
 }
