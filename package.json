@@ -1,24 +1,18 @@
 {
-  "name": "hypestyle",
-  "version": "0.0.1",
-  "description": "",
-  "main": "gulpfile.js",
+  "name": "HypeStyle",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/lassev05/HypeStyle.git",
+  "author": "devlassev <vestergaardlasse2@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.43.4"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lassev05/HypeStyle.git"
-  },
-  "keywords": [
-    "js",
-    "scss",
-    "css"
-  ],
-  "author": "Lasse Vestergaard",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/lassev05/HypeStyle/issues"
-  },
-  "homepage": "https://github.com/lassev05/HypeStyle#readme"
+    "css": "gulp",
+    "vuepress:dev": "npx vuepress dev docs",
+    "vuepress:build": "npx vuepress build docs"
+  }
 }
