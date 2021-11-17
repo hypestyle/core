@@ -18,6 +18,24 @@ Copy-paste the stylesheet link below and add it to your project.
 />
 ```
 
+### Intall with package manager
+
+#
+
+<code-group>
+<code-block title="YARN">
+```bash
+yarn add hypestyle
+```
+</code-block>
+
+<code-block title="NPM" active>
+```bash
+npm install hypestyle
+```
+</code-block>
+</code-group>
+
 <br>
 
 ## Components
