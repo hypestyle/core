@@ -1,3 +1,14 @@
+---
+tags:
+  - install
+  - docs
+  - cdn
+  - package manager
+
+prev: true
+next: ./inclued.md
+---
+
 # Documentation Start
 
 Get started HypeStyle CSS to build your own websites easy. To learn more about you can read the documentation.

@@ -6,6 +6,9 @@ module.exports = {
 
   themeConfig: {
     // some settings
+    logo: "/img/icon.png",
+    searchPlaceholder: "Search in the docs",
+    nextLinks: true,
     smoothScroll: true,
     lastUpdated: true,
     backToTop: true,
