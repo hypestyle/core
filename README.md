@@ -77,6 +77,6 @@ You can find the documentation [here](https://hypestyle.netlify.app/docs/).
 Code and documentation copyright (c) 2021 Hypll <strong>LLC</strong>
 <br>
 <br>
-<em>HypeStyle CSS is owned by of <strong>Hypll LLC.</strong> <em>
+<em>HypeStyle CSS is owned by <strong>Hypll LLC.</strong> <em>
 <br>
 <em>HypeStyle CSS is licensed under the <strong>MIT License.</strong></em>

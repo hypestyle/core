@@ -1,32 +1,30 @@
 {
-  "name": "twbs/bootstrap",
-  "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+  "name": "lassev05/hypestyle",
+  "description": "HypeStyle CSS is a collection of CSS utilities for web development. ",
   "keywords": [
     "css",
     "js",
     "sass",
-    "mobile-first",
-    "responsive",
+    "utilities",
     "front-end",
     "framework",
-    "web"
+    "web",
+    "development",
+    "css3",
+    "css-framework",
+    "css-utilities",
+    "css-library",
+    "css-style"
   ],
-  "homepage": "https://getbootstrap.com/",
+  "homepage": "https://hypestyle.netlify.app",
   "authors": [
     {
-      "name": "Mark Otto",
-      "email": "markdotto@gmail.com"
-    },
-    {
-      "name": "Jacob Thornton",
-      "email": "jacobthornton@gmail.com"
+      "name": "Lasse Vestergaard",
+      "email": "vestergaardlasse2@gmail.com"
     }
   ],
   "support": {
-    "issues": "https://github.com/twbs/bootstrap/issues"
+    "issues": "https://github.com/lassev05/hypestyle/issues"
   },
-  "license": "MIT",
-  "replace": {
-    "twitter/bootstrap": "self.version"
-  }
+  "license": "MIT"
 }
