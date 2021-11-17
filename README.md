@@ -44,10 +44,11 @@
 <ul>
 
 <br>
+<br>
 
 ## What's included
 
-<p> When you install HypeStyle CSS, you will get several CSS utilities for web development. So down here you will find a list of what is included.</p>
+When you install HypeStyle CSS, you will get several CSS utilities for web development. So down here you will find a list of what is included.
 
 ```text
 hypestyle/
@@ -58,6 +59,24 @@ hypestyle/
 
 <br>
 
+## Documentation
+
+You can find the documentation [here](https://hypestyle.netlify.app/docs/).
+
+<br>
+
 ## Authors
 
 - [@lassev05](https://www.github.com/lassev05)
+
+<br>
+<br>
+
+## Copyright
+
+Code and documentation copyright (c) 2021 Hypll <strong>LLC</strong>
+<br>
+<br>
+<em>HypeStyle CSS is owned by of <strong>Hypll LLC.</strong> <em>
+<br>
+<em>HypeStyle CSS is licensed under the <strong>MIT License.</strong></em>
