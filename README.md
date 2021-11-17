@@ -12,7 +12,7 @@
 
 <div align="center">
 
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/lassev05/hypestyle/blob/master/LICENSE)
 
 </div>
 
@@ -42,6 +42,19 @@
 </li>
 
 <ul>
+
+<br>
+
+## What's included
+
+<p> When you install HypeStyle CSS, you will get several CSS utilities for web development. So down here you will find a list of what is included.</p>
+
+```text
+hypestyle/
+├── dist/
+│   ├── hypestyle.min.css
+└──
+```
 
 <br>
 
