@@ -4,10 +4,16 @@ tags:
   - docs
   - cdn
   - package manager
+  - included
+  - inclued
+  - what is included
 
-prev: true
-next: ./inclued.md
+footer: MIT Licensed | Copyright © 2021
 ---
+
+::: warning READ THIS
+**Warning**: This is a beta version of the documentation.
+:::
 
 # Documentation Start
 
@@ -49,6 +55,19 @@ npm install hypestyle
 
 <br>
 
+## Whats included
+
+When you install HypeStyle CSS, you will get several CSS utilities for web development. So down here you will find a list of what is included.
+
+```text
+hypestyle/
+├── dist/
+│   ├── hypestyle.min.css
+└──
+```
+
+<br>
+
 ## Components
 
 If you want to use components in your project, you can click [here](/docs/components).
@@ -77,3 +96,7 @@ If you want to use components in your project, you can click [here](/docs/compon
   </body>
 </html>
 ```
+
+## Do you have
+
+Eyy if you have any questions or suggestions, you can contact us. On the [GitHub]() page.
