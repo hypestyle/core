@@ -75,7 +75,6 @@ $utilities: (
       "13": $base-margin * 24,
       "14": $base-margin * 26,
       "15": $base-margin * 28,
-      "16": $base-margin * 30,
     ),
   ),
   "margin-left": (
@@ -97,7 +96,6 @@ $utilities: (
       "13": $base-margin * 24,
       "14": $base-margin * 26,
       "15": $base-margin * 28,
-      "16": $base-margin * 30,
     ),
   ),
   "margin-right": (
@@ -119,7 +117,6 @@ $utilities: (
       "13": $base-margin * 24,
       "14": $base-margin * 26,
       "15": $base-margin * 28,
-      "16": $base-margin * 30,
     ),
   ),
   "margin-top": (
@@ -141,7 +138,6 @@ $utilities: (
       "13": $base-margin * 24,
       "14": $base-margin * 26,
       "15": $base-margin * 28,
-      "16": $base-margin * 30,
     ),
   ),
   "margin-bottom": (
@@ -163,7 +159,6 @@ $utilities: (
       "13": $base-margin * 24,
       "14": $base-margin * 26,
       "15": $base-margin * 28,
-      "16": $base-margin * 30,
     ),
   ),
   "opacity": (
@@ -218,16 +213,79 @@ $utilities: (
       "revert": revert,
     ),
   ),
-  "font-size": (
-    "prefix": "font",
-    "values": (
-      "sm": $font-size-sm,
-      "md": $base-font-size,
-      "lg": $font-size-lg,
-      "xl": $font-size-xl,
-      "xxl": $font-size-xxl,
+  // font sizes
+  "font-size":
+    (
+      "prefix": "font",
+      "values": (
+        "sm": $font-size-sm,
+        "md": $base-font-size,
+        "lg": $font-size-lg,
+        "xl": $font-size-xl,
+        "xxl": $font-size-xxl,
+      ),
     ),
-  ),
+  // heights
+  "height":
+    (
+      prefix: "h",
+      values: (
+        "full": 100%,
+        "1": 5px,
+        "2": 10px,
+        "3": 15px,
+        "4": 20px,
+        "5": 25px,
+        "6": 30px,
+        "7": 35px,
+        "8": 40px,
+        "9": 45px,
+        "10": 50px,
+        "11": 55px,
+        "12": 60px,
+        "13": 65px,
+        "14": 70px,
+        "15": 75px,
+        "16": 80px,
+        "17": 85px,
+        "18": 90px,
+        "19": 95px,
+        "20": 100px,
+        "21": 105px,
+        "22": 110px,
+        "23": 115px,
+        "24": 120px,
+        "25": 125px,
+        "26": 130px,
+        "27": 135px,
+        "28": 140px,
+        "29": 145px,
+        "30": 150px,
+        "31": 155px,
+        "32": 160px,
+        "33": 165px,
+        "34": 170px,
+        "35": 175px,
+        "36": 180px,
+        "37": 185px,
+        "38": 190px,
+        "39": 195px,
+        "40": 200px,
+      ),
+      // box shadows
+      "box-shadow":
+        (
+          "prefix": "shadow",
+          "values": (
+            "default": $box-shadow,
+            "none": none,
+            "sm": $box-shadow-sm,
+            "lg": $box-shadow-lg,
+            "xl": $box-shadow-xl,
+            "xxl": $box-shadow-xxl,
+          ),
+        ),
+    ),
 );
 
 // generate utility classes
