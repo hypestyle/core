@@ -12,7 +12,8 @@
 
 <div align="center">
 
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/lassev05/hypestyle/blob/master/LICENSE)
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?style=for-the-badge)](https://github.com/lassev05/hypestyle/blob/master/LICENSE)
+[![MIT License](https://img.shields.io/npm/v/hypestyle?style=for-the-badge)](https://github.com/lassev05/hypestyle/blob/master/LICENSE)
 
 </div>
 

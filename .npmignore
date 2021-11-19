@@ -3,3 +3,8 @@ docs
 examples
 node_modules
 src
+composer.json
+composer.lock
+SECURITY.md
+todoList.md
+gulpfile.js

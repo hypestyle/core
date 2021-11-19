@@ -31,7 +31,7 @@ Copy-paste the stylesheet link below and add it to your project.
 ```html
 <link
   rel="stylesheet"
-  href="https://unpkg.com/hypestyle@1.0.0/dist/hypestyle.min.css"
+  href="https://unpkg.com/hypestyle@0.1.1/dist/hypestyle.min.css"
 />
 ```
 

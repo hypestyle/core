@@ -1,8 +1,9 @@
 {
   "name": "hypestyle",
-  "version": "1.0.0",
+  "version": "0.1.1",
   "main": "index.js",
   "repository": "https://github.com/lassev05/HypeStyle.git",
+  "homepage": "https://hypestyle.netlify.app/",
   "author": "devlassev <vestergaardlasse2@gmail.com>",
   "license": "MIT",
   "dependencies": {
