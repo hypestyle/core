@@ -14,7 +14,8 @@
     "css-framework",
     "css-utilities",
     "css-library",
-    "css-style"
+    "css-style",
+    "easy",
   ],
   "homepage": "https://hypestyle.netlify.app",
   "authors": [
