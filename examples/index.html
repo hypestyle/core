@@ -5,11 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../dist/hypestyle.min.css" />
-    <title>Document</title>
+    <title>8ball</title>
   </head>
   <body>
-    <nav class="navbar-black h-11">
-      <h1 class="site-title text-white">This is the logo!</h1>
-    </nav>
+    <!-- 8ball -->
+    <div class="card">
+      <label class="card-title">Enter a question</label>
+      <br />
+      <input class="card-body" type="text" id="question" />
+      <button class="btn" id="ask">Ask</button>
+      <div
+        style="max-width: 40px"
+        class="bg-black text-white"
+        id="answer"
+      ></div>
+    </div>
   </body>
+  <script>
+    // 8ball
+    const question = document.getElementById("question");
+    const answer = document.getElementById("answer");
+    const ask = document.getElementById("ask");
+    ask.addEventListener("click", () => {
+      const xhr = new XMLHttpRequest();
+      xhr.open("GET", "https://yesno.wtf/api");
+      xhr.onload = () => {
+        const data = JSON.parse(xhr.responseText);
+        answer.innerHTML = data.answer;
+      };
+      xhr.send();
+    });
+  </script>
 </html>
