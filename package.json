@@ -15,6 +15,10 @@
     "css": "gulp",
     "vuepress:dev": "npx vuepress dev docs",
     "vuepress:build ": "npx vuepress build docs",
-    "publish": "docs/.vuepress/dist"
+    "publish": "docs/.vuepress/dist",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "husky": "^7.0.4"
   }
 }
