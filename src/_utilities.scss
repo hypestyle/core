@@ -206,6 +206,14 @@ $utilities: (
       "column-reverse": column-reverse,
     ),
   ),
+  "flex-wrap": (
+    "prefix": "flex-w",
+    "values": (
+      "nowrap": nowrap,
+      "wrap": wrap,
+      "wrap-reverse": wrap-reverse,
+    ),
+  ),
   "text-align": (
     "prefix": "text",
     "values": (

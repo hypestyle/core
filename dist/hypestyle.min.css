@@ -5414,6 +5414,18 @@ img {
   flex-direction: column-reverse;
 }
 
+.flex-w-nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex-w-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-w-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
 .text-center {
   text-align: center;
 }
