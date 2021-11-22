@@ -230,6 +230,18 @@ $utilities: (
       "revert": revert,
     ),
   ),
+  "text-decoration": (
+    "prefix": "text-d",
+    "values": (
+      "none": none,
+      "underline": underline,
+      "line-through": line-through,
+      "overline": overline,
+      "initial": initial,
+      "inherit": inherit,
+      "revert": revert,
+    ),
+  ),
   // font sizes
   "font-size":
     (

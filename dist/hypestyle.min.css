@@ -5470,6 +5470,34 @@ img {
   text-align: revert;
 }
 
+.text-d-none {
+  text-decoration: none;
+}
+
+.text-d-underline {
+  text-decoration: underline;
+}
+
+.text-d-line-through {
+  text-decoration: line-through;
+}
+
+.text-d-overline {
+  text-decoration: overline;
+}
+
+.text-d-initial {
+  text-decoration: initial;
+}
+
+.text-d-inherit {
+  text-decoration: inherit;
+}
+
+.text-d-revert {
+  text-decoration: revert;
+}
+
 .font-sm {
   font-size: 0.75rem;
 }
