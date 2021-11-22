@@ -197,6 +197,15 @@ $utilities: (
       "inline-block": inline-block,
     ),
   ),
+  "flex-direction": (
+    "prefix": "flex-d",
+    "values": (
+      "row": row,
+      "row-reverse": row-reverse,
+      "column": column,
+      "column-reverse": column-reverse,
+    ),
+  ),
   "text-align": (
     "prefix": "text",
     "values": (
@@ -271,20 +280,17 @@ $utilities: (
         "38": 190px,
         "39": 195px,
         "40": 200px,
+        "41": 205px,
+        "42": 210px,
+        "43": 215px,
+        "44": 220px,
+        "45": 225px,
+        "46": 230px,
+        "47": 235px,
+        "48": 240px,
+        "49": 245px,
+        "50": 250px,
       ),
-      // box shadows
-      "box-shadow":
-        (
-          "prefix": "shadow",
-          "values": (
-            "default": $box-shadow,
-            "none": none,
-            "sm": $box-shadow-sm,
-            "lg": $box-shadow-lg,
-            "xl": $box-shadow-xl,
-            "xxl": $box-shadow-xxl,
-          ),
-        ),
     ),
 );
 
