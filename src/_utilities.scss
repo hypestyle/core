@@ -242,6 +242,20 @@ $utilities: (
       "revert": revert,
     ),
   ),
+  // font familys
+  "font-family":
+    (
+      "prefix": "ff",
+      "values": (
+        "sans-serif": sans-serif,
+        "serif": serif,
+        "monospace": monospace,
+        "system-ui": system-ui,
+        "initial": initial,
+        "inherit": inherit,
+        "revert": revert,
+      ),
+    ),
   // font sizes
   "font-size":
     (

@@ -5498,6 +5498,34 @@ img {
   text-decoration: revert;
 }
 
+.ff-sans-serif {
+  font-family: sans-serif;
+}
+
+.ff-serif {
+  font-family: serif;
+}
+
+.ff-monospace {
+  font-family: monospace;
+}
+
+.ff-system-ui {
+  font-family: system-ui;
+}
+
+.ff-initial {
+  font-family: initial;
+}
+
+.ff-inherit {
+  font-family: inherit;
+}
+
+.ff-revert {
+  font-family: revert;
+}
+
 .font-sm {
   font-size: 0.75rem;
 }
