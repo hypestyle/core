@@ -55,6 +55,8 @@ module.exports = {
         children: [
           "/docs/utilities/alignment",
           "/docs/utilities/border-radius",
+          "/docs/utilities/padding",
+          "/docs/utilities/margin",
         ],
         initialOpenGroupIndex: -1,
       },
