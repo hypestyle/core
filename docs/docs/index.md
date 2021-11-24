@@ -86,7 +86,7 @@ If you want to use components in your project, you can click [here](/docs/compon
     <!-- HypeStyle CSS -->
     <link
       rel="stylesheet"
-      href="https://unpkg.com/hypestyle@1.0.0/dist/hypestyle.min.css"
+      href="https://unpkg.com/hypestyle@0.1.1/dist/hypestyle.min.css"
     />
 
     <title>Yeah i using HypeStyle CSS!</title>
