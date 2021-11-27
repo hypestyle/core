@@ -1,32 +1,32 @@
 ---
+sidebar: auto
+
 tags:
-  - install
+  - installere
   - docs
   - cdn
   - package manager
-  - included
-  - inclued
-  - what is included
+  - inkluderet
+  - hvad er
 
 footer: MIT Licensed | Copyright © 2021
 ---
 
-::: warning READ THIS
-**Warning**: This is a beta version of the documentation.
+::: warning LÆS DETTE
+**Warning**: Dette er en betaversion af dokumentationen.
 :::
 
-# Documentation Start
+# Dokumentation Start
 
-Get started HypeStyle CSS to build your own websites easy. To learn more about you can read the documentation.
-We have tryed to make the documentation as easy as possible. As much we can.
+Kom i gang Hype Style CSS til at bygge dine egne hjemmesider nemt. Hvis du vil vide mere om, kan du læse dokumentationen. Vi har forsøgt at gøre dokumentationen så let som muligt. Så meget vi kan.
 
-## Getting Started
+## Kom godt i gang
 
-So you want to start using HypeStyle CSS? And you dont no how to start? Well, you follow the steps below.
+Så du vil begynde at bruge HypeStyle CSS? Og du ved ikke, hvordan du starter? Nå, du følger trinene nedenfor.
 
 ### CSS
 
-Copy-paste the stylesheet link below and add it to your project.
+Kopiér-indsæt stylesheet-linket nedenfor, og føj det til dit projekt.
 
 ```html
 <link
@@ -35,7 +35,7 @@ Copy-paste the stylesheet link below and add it to your project.
 />
 ```
 
-### Intall with package manager
+### Installer med package manager
 
 #
 
@@ -55,9 +55,9 @@ npm install hypestyle
 
 <br>
 
-## Whats included
+## Hvad er inkluderet
 
-When you install HypeStyle CSS, you will get several CSS utilities for web development. So down here you will find a list of what is included.
+Når du installerer HypeStyle CSS, får du flere CSS-værktøjer til webudvikling. Så hernede finder du en liste over, hvad der medfølger.
 
 ```text
 hypestyle/
@@ -95,4 +95,4 @@ hypestyle/
 
 ## Do you have
 
-Eyy if you have any questions or suggestions, you can contact us. On the [GitHub]() page.
+Eyy, hvis du har spørgsmål eller forslag, kan du kontakte os. På vores [GitHub]("/github") side.

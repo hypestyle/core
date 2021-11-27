@@ -2,7 +2,7 @@ module.exports = {
   plugins: ["@vuepress/last-updated", "@vuepress/back-to-top"],
   title: "HypeStyle CSS",
   icon: "/img/icon.png",
-  lang: 'en-US',
+  lang: "en-US",
   theme: "default-prefers-color-scheme",
   description:
     "HypeStyle CSS is a collection of CSS utilities for web development.",
@@ -37,6 +37,12 @@ module.exports = {
       { text: "🏠 Home", link: "/" },
       { text: "📜 Documentation", link: "/docs/" },
       { text: "⭐ Github", link: "https://github.com/lassev05/hypestyle" },
+
+      {
+        text: "Languages",
+        ariaLabel: "Language Menu",
+        items: [{ text: "Danish (BETA)", link: "/docs/da/" }],
+      },
     ],
 
     // sidebar: "auto",
