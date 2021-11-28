@@ -15,6 +15,14 @@ module.exports = {
         href: "https://unpkg.com/hypestyle@1.0.0/dist/hypestyle.min.css",
       },
     ],
+    [
+      "meta",
+      {
+        name: "description",
+        content:
+          "HypeStyle CSS is a collection of CSS utilities for web development.",
+      },
+    ],
   ],
 
   themeConfig: {
@@ -26,9 +34,9 @@ module.exports = {
     lastUpdated: true,
     backToTop: true,
     search: true,
-    searchMaxSuggestions: 10,
-    repo: "lassev05/hypestyle",
-    repoLabel: "✨ Contribute!",
+    searchMaxSuggestions: 15,
+    // repo: "lassev05/hypestyle",
+    // repoLabel: "✨ Contribute!",
 
     // head
 
@@ -36,27 +44,26 @@ module.exports = {
     nav: [
       { text: "🏠 Home", link: "/" },
       { text: "📜 Documentation", link: "/docs/" },
-      { text: "⭐ Github", link: "https://github.com/lassev05/hypestyle" },
-
       {
-        text: "Languages",
+        text: "🚩 Languages",
         ariaLabel: "Language Menu",
         items: [{ text: "Danish (BETA)", link: "/docs/da/" }],
       },
+      { text: "⭐ Github", link: "https://github.com/lassev05/hypestyle" },
     ],
 
-    // sidebar: "auto",
+    //
 
     sidebar: [
       {
-        title: "Documentation Start",
-        path: "/docs/",
-        children: [],
+        title: "Getting Started",
+        //  path: "/docs/",
+        children: ["/docs/"],
         initialOpenGroupIndex: -1,
       },
       {
         title: "Components",
-        children: ["/docs/components/button"],
+        children: ["/docs/components/button", "/docs/components/navbar"],
         initialOpenGroupIndex: -1,
       },
       {
