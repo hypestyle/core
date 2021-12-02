@@ -21,12 +21,12 @@
 ### Table of Contents
 
 <li>
-    <a href="https://hypestyle.netlify.app/docs/start/">Introduction</a>
+    <a href="https://hypestyle.netlify.app/docs">Introduction</a>
 
 </li>
 
 <li>
-    <a href="https://hypestyle.netlify.app/docs/start/">Installation</a>
+    <a href="https://hypestyle.netlify.app/docs/#getting-started">Installation</a>
 </li>
 <li>
     <a href="https://github.com/lassev05/HypeStyle/blob/main/LICENSE">License</a>
