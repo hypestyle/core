@@ -18,3 +18,12 @@
 - [] Text transform
 - [] Text shadow
 - [] Text overflow
+- [] Space between
+<!-- BACKGROUNDS -->
+- [x] Background Color
+- [] Background repeat
+- [] Background position
+- [] Background size
+- [] Background attachment
+- [] Background image
+- [] Background opacity

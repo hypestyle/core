@@ -21,26 +21,21 @@
 ### Table of Contents
 
 <li>
-    <a href="">Introduction</a> 
-    
+    <a href="https://hypestyle.netlify.app/docs/start/">Introduction</a>
+
+</li>
+
+<li>
+    <a href="https://hypestyle.netlify.app/docs/start/">Installation</a>
 </li>
 <li>
-    <a href="">Installation</a>
+    <a href="https://github.com/lassev05/HypeStyle/blob/main/LICENSE">License</a>
 </li>
 <li>
-    <a href="">Usage</a>
+    <a href="https://github.com/lassev05/HypeStyle/blob/main/CONTRIBUTING.md">Contributing</a>
 </li>
 <li>
-    <a href="">License</a>
-</li>
-<li>
-    <a href="">Contributing</a>
-</li>
-<li>
-    <a href="">Tests</a>
-</li>
-<li>
-    <a href="">Questions</a>
+    <a href="https://github.com/lassev05/HypeStyle/discussions/new?category=q-a">Questions</a>
 </li>
 
 <ul>
