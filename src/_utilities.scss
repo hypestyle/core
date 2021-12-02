@@ -268,6 +268,45 @@ $utilities: (
         "xxl": $font-size-xxl,
       ),
     ),
+  // align items
+  "align-items":
+    (
+      "prefix": "ai",
+      "values": (
+        "center": center,
+        "flex-start": flex-start,
+        "flex-end": flex-end,
+        "baseline": baseline,
+        "stretch": stretch,
+        "initial": initial,
+        "inherit": inherit,
+        "revert": revert,
+      ),
+    ),
+  // widths
+  "width":
+    (
+      "prefix": "w",
+      "values": (
+        "auto": auto,
+        "full": 100%,
+        "1": 0.25rem,
+        "2": 0.5rem,
+      ),
+    ),
+  // shadows
+  "box-shadow":
+    (
+      "prefix": "sh",
+      "values": (
+        "default": $box-shadow,
+        "none": none,
+        "sm": $box-shadow-sm,
+        "lg": $box-shadow-lg,
+        "xl": $box-shadow-xl,
+        "xxl": $box-shadow-xxl,
+      ),
+    ),
   // heights
   "height":
     (

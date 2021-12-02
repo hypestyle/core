@@ -1,3 +1,5 @@
+const sidebar = require("./sidebar");
+
 module.exports = {
   plugins: ["@vuepress/last-updated", "@vuepress/back-to-top"],
   title: "HypeStyle CSS",
@@ -52,20 +54,17 @@ module.exports = {
       { text: "⭐ Github", link: "https://github.com/lassev05/hypestyle" },
     ],
 
-    //
-
     sidebar: [
       {
-        title: "Getting Started",
-        //  path: "/docs/",
-        children: ["/docs/"],
-        initialOpenGroupIndex: -1,
+        title: "Start",
+        children: ["/docs/start/"],
       },
+
       {
         title: "Components",
         children: ["/docs/components/button", "/docs/components/navbar"],
-        initialOpenGroupIndex: -1,
       },
+
       {
         title: "Utilities",
         children: [
@@ -81,8 +80,37 @@ module.exports = {
           "/docs/utilities/font-size",
           "/docs/utilities/height",
         ],
-        initialOpenGroupIndex: -1,
       },
     ],
+
+    // sidebar: [
+    //   {
+    //     title: "Getting Started",
+    //     children: ["/docs/"],
+    //     initialOpenGroupIndex: -1,
+    //   },
+    //   {
+    //     title: "Components",
+    //     children: ["/docs/components/button", "/docs/components/navbar"],
+    //     initialOpenGroupIndex: -1,
+    //   },
+    //   {
+    //     title: "Utilities",
+    //     children: [
+    //       "/docs/utilities/alignment",
+    //       "/docs/utilities/border-radius",
+    //       "/docs/utilities/padding",
+    //       "/docs/utilities/margin",
+    //       "/docs/utilities/display",
+    //       "/docs/utilities/flex-direction",
+    //       "/docs/utilities/flex-wrap",
+    //       "/docs/utilities/text-decoration",
+    //       "/docs/utilities/font-family",
+    //       "/docs/utilities/font-size",
+    //       "/docs/utilities/height",
+    //     ],
+    //     initialOpenGroupIndex: -1,
+    //   },
+    // ],
   },
 };
