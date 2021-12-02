@@ -7,7 +7,7 @@
   "author": "devlassev <vestergaardlasse2@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "glob-parent": "^5.1.2",
+    "glob-parent": "5.1.2",
     "graceful-fs": "^4.2.8",
     "gulp": "^4.0.2",
     "gulp-sass": "^5.0.0",
