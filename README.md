@@ -58,6 +58,7 @@ hypestyle/
 
 ## Documentation
 
+Feel free to give a star ⭐
 You can find the documentation [here](https://hypestyle.netlify.app/docs/).
 
 <br>
