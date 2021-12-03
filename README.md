@@ -82,7 +82,4 @@ Code and documentation copyright (c) 2021 Hypll <strong>LLC</strong>
   
   
   
-  <!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/lassev05/hypestyle" data-size="large" data-show-count="true" aria-label="Star lassev05/hypestyle on GitHub">Star</a>
-  <!-- Place this tag in your head or just before your close body tag. -->
-<script async defer src="https://buttons.github.io/buttons.js"></script>
+
