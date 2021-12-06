@@ -81,6 +81,7 @@ module.exports = {
           "/docs/utilities/font-size",
           "/docs/utilities/height",
           "/docs/utilities/align-items",
+          "/docs/utilities/shadows",
         ],
       },
     ],
