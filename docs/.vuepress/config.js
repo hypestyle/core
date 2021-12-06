@@ -1,5 +1,3 @@
-const sidebar = require("./sidebar");
-
 module.exports = {
   plugins: ["@vuepress/last-updated", "@vuepress/back-to-top"],
   title: "HypeStyle CSS",
@@ -57,16 +55,19 @@ module.exports = {
     sidebar: [
       {
         title: "Start",
-        children: ["/docs/start/"],
+        collapsable: false,
+        children: ["/docs/start/#getting-started"],
       },
 
       {
         title: "Components",
+        collapsable: false,
         children: ["/docs/components/button", "/docs/components/navbar"],
       },
 
       {
         title: "Utilities",
+        collapsable: false,
         children: [
           "/docs/utilities/alignment",
           "/docs/utilities/border-radius",
@@ -79,38 +80,9 @@ module.exports = {
           "/docs/utilities/font-family",
           "/docs/utilities/font-size",
           "/docs/utilities/height",
+          "/docs/utilities/align-items",
         ],
       },
     ],
-
-    // sidebar: [
-    //   {
-    //     title: "Getting Started",
-    //     children: ["/docs/"],
-    //     initialOpenGroupIndex: -1,
-    //   },
-    //   {
-    //     title: "Components",
-    //     children: ["/docs/components/button", "/docs/components/navbar"],
-    //     initialOpenGroupIndex: -1,
-    //   },
-    //   {
-    //     title: "Utilities",
-    //     children: [
-    //       "/docs/utilities/alignment",
-    //       "/docs/utilities/border-radius",
-    //       "/docs/utilities/padding",
-    //       "/docs/utilities/margin",
-    //       "/docs/utilities/display",
-    //       "/docs/utilities/flex-direction",
-    //       "/docs/utilities/flex-wrap",
-    //       "/docs/utilities/text-decoration",
-    //       "/docs/utilities/font-family",
-    //       "/docs/utilities/font-size",
-    //       "/docs/utilities/height",
-    //     ],
-    //     initialOpenGroupIndex: -1,
-    //   },
-    // ],
   },
 };
