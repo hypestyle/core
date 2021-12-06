@@ -21,4 +21,8 @@ We all need a navigation bar to our website. So hypestyle created that! But not 
 
 ---
 
-You can use all the [colors]("/docs/utilities/colors/pattle") in the color pattle to customize the navigation bar bg
+<br>
+
+You can use all the [colors]("/") in the color pattle to customize the navigation bar for the background
+<br>
+<code>class="navbar-(COLOR)"</code>
