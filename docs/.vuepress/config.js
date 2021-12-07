@@ -9,7 +9,23 @@ module.exports = {
         'HypeStyle CSS is a collection of CSS utilities for web development.',
     head: [
         ['meta', { charset: 'utf-8' }],
-        ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+        [
+            'meta',
+            {
+                name: 'viewport',
+                content: 'width=device-width, initial-scale=1',
+            },
+        ],
+
+        // create a meta tag appletouch icon
+        [
+            'link',
+            {
+                rel: 'apple-touch-icon',
+                sizes: '180x180',
+                href: '/img/icon.png',
+            },
+        ],
         ['link', { rel: 'icon', href: `/img/icon.png` }],
         [
             'link',
@@ -26,6 +42,7 @@ module.exports = {
                     'HypeStyle CSS is a collection of CSS utilities for web development.',
             },
         ],
+        ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ],
 
     themeConfig: {
