@@ -8,6 +8,8 @@ module.exports = {
     description:
         'HypeStyle CSS is a collection of CSS utilities for web development.',
     head: [
+        ['meta', { charset: 'utf-8' }],
+        ['meta', { name: 'theme-color', content: '#3eaf7c' }],
         ['link', { rel: 'icon', href: `/img/icon.png` }],
         [
             'link',
