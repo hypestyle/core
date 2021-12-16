@@ -1,361 +1,388 @@
-@use "sass:math";
+@use 'sass:math';
 
 $utilities: (
-  "padding": (
-    "prefix": "p",
-    "values": (
-      "0": 0,
-      "1": $base-padding,
-      "2": $base-padding * 2,
-      "3": $base-padding * 4,
-      "4": $base-padding * 6,
-      "5": $base-padding * 8,
+    'padding': (
+        'prefix': 'p',
+        'values': (
+            '0': 0,
+            '1': $base-padding,
+            '2': $base-padding * 2,
+            '3': $base-padding * 4,
+            '4': $base-padding * 6,
+            '5': $base-padding * 8,
+        ),
     ),
-  ),
-  "padding-left": (
-    "prefix": "pl",
-    "values": (
-      "0": 0,
-      "1": $base-padding,
-      "2": $base-padding * 2,
-      "3": $base-padding * 4,
-      "4": $base-padding * 6,
-      "5": $base-padding * 8,
+    'padding-left': (
+        'prefix': 'pl',
+        'values': (
+            '0': 0,
+            '1': $base-padding,
+            '2': $base-padding * 2,
+            '3': $base-padding * 4,
+            '4': $base-padding * 6,
+            '5': $base-padding * 8,
+        ),
     ),
-  ),
-  "padding-right": (
-    "prefix": "pr",
-    "values": (
-      "0": 0,
-      "1": $base-padding,
-      "2": $base-padding * 2,
-      "3": $base-padding * 4,
-      "4": $base-padding * 6,
-      "5": $base-padding * 8,
+    'padding-right': (
+        'prefix': 'pr',
+        'values': (
+            '0': 0,
+            '1': $base-padding,
+            '2': $base-padding * 2,
+            '3': $base-padding * 4,
+            '4': $base-padding * 6,
+            '5': $base-padding * 8,
+        ),
     ),
-  ),
-  "padding-top": (
-    "prefix": "pt",
-    "values": (
-      "0": 0,
-      "1": $base-padding,
-      "2": $base-padding * 2,
-      "3": $base-padding * 4,
-      "4": $base-padding * 6,
-      "5": $base-padding * 8,
+    'padding-top': (
+        'prefix': 'pt',
+        'values': (
+            '0': 0,
+            '1': $base-padding,
+            '2': $base-padding * 2,
+            '3': $base-padding * 4,
+            '4': $base-padding * 6,
+            '5': $base-padding * 8,
+        ),
     ),
-  ),
-  "padding-bottom": (
-    "prefix": "pb",
-    "values": (
-      "0": 0,
-      "1": $base-padding,
-      "2": $base-padding * 2,
-      "3": $base-padding * 4,
-      "4": $base-padding * 6,
-      "5": $base-padding * 8,
+    'padding-bottom': (
+        'prefix': 'pb',
+        'values': (
+            '0': 0,
+            '1': $base-padding,
+            '2': $base-padding * 2,
+            '3': $base-padding * 4,
+            '4': $base-padding * 6,
+            '5': $base-padding * 8,
+        ),
     ),
-  ),
-  "margin": (
-    "prefix": "m",
-    "values": (
-      "0": 0,
-      "1": $base-margin,
-      "2": $base-margin * 2,
-      "3": $base-margin * 4,
-      "4": $base-margin * 6,
-      "5": $base-margin * 8,
-      "6": $base-margin * 10,
-      "7": $base-margin * 12,
-      "8": $base-margin * 14,
-      "9": $base-margin * 16,
-      "10": $base-margin * 18,
-      "11": $base-margin * 20,
-      "12": $base-margin * 22,
-      "13": $base-margin * 24,
-      "14": $base-margin * 26,
-      "15": $base-margin * 28,
+    'margin': (
+        'prefix': 'm',
+        'values': (
+            '0': 0,
+            '1': $base-margin,
+            '2': $base-margin * 2,
+            '3': $base-margin * 4,
+            '4': $base-margin * 6,
+            '5': $base-margin * 8,
+            '6': $base-margin * 10,
+            '7': $base-margin * 12,
+            '8': $base-margin * 14,
+            '9': $base-margin * 16,
+            '10': $base-margin * 18,
+            '11': $base-margin * 20,
+            '12': $base-margin * 22,
+            '13': $base-margin * 24,
+            '14': $base-margin * 26,
+            '15': $base-margin * 28,
+        ),
     ),
-  ),
-  "margin-left": (
-    "prefix": "ml",
-    "values": (
-      "0": 0,
-      "1": $base-margin,
-      "2": $base-margin * 2,
-      "3": $base-margin * 4,
-      "4": $base-margin * 6,
-      "5": $base-margin * 8,
-      "6": $base-margin * 10,
-      "7": $base-margin * 12,
-      "8": $base-margin * 14,
-      "9": $base-margin * 16,
-      "10": $base-margin * 18,
-      "11": $base-margin * 20,
-      "12": $base-margin * 22,
-      "13": $base-margin * 24,
-      "14": $base-margin * 26,
-      "15": $base-margin * 28,
+    'margin-left': (
+        'prefix': 'ml',
+        'values': (
+            '0': 0,
+            '1': $base-margin,
+            '2': $base-margin * 2,
+            '3': $base-margin * 4,
+            '4': $base-margin * 6,
+            '5': $base-margin * 8,
+            '6': $base-margin * 10,
+            '7': $base-margin * 12,
+            '8': $base-margin * 14,
+            '9': $base-margin * 16,
+            '10': $base-margin * 18,
+            '11': $base-margin * 20,
+            '12': $base-margin * 22,
+            '13': $base-margin * 24,
+            '14': $base-margin * 26,
+            '15': $base-margin * 28,
+        ),
     ),
-  ),
-  "margin-right": (
-    "prefix": "mr",
-    "values": (
-      "0": 0,
-      "1": $base-margin,
-      "2": $base-margin * 2,
-      "3": $base-margin * 4,
-      "4": $base-margin * 6,
-      "5": $base-margin * 8,
-      "6": $base-margin * 10,
-      "7": $base-margin * 12,
-      "8": $base-margin * 14,
-      "9": $base-margin * 16,
-      "10": $base-margin * 18,
-      "11": $base-margin * 20,
-      "12": $base-margin * 22,
-      "13": $base-margin * 24,
-      "14": $base-margin * 26,
-      "15": $base-margin * 28,
+    'margin-right': (
+        'prefix': 'mr',
+        'values': (
+            '0': 0,
+            '1': $base-margin,
+            '2': $base-margin * 2,
+            '3': $base-margin * 4,
+            '4': $base-margin * 6,
+            '5': $base-margin * 8,
+            '6': $base-margin * 10,
+            '7': $base-margin * 12,
+            '8': $base-margin * 14,
+            '9': $base-margin * 16,
+            '10': $base-margin * 18,
+            '11': $base-margin * 20,
+            '12': $base-margin * 22,
+            '13': $base-margin * 24,
+            '14': $base-margin * 26,
+            '15': $base-margin * 28,
+        ),
     ),
-  ),
-  "margin-top": (
-    "prefix": "mt",
-    "values": (
-      "0": 0,
-      "1": $base-margin,
-      "2": $base-margin * 2,
-      "3": $base-margin * 4,
-      "4": $base-margin * 6,
-      "5": $base-margin * 8,
-      "6": $base-margin * 10,
-      "7": $base-margin * 12,
-      "8": $base-margin * 14,
-      "9": $base-margin * 16,
-      "10": $base-margin * 18,
-      "11": $base-margin * 20,
-      "12": $base-margin * 22,
-      "13": $base-margin * 24,
-      "14": $base-margin * 26,
-      "15": $base-margin * 28,
+    'margin-top': (
+        'prefix': 'mt',
+        'values': (
+            '0': 0,
+            '1': $base-margin,
+            '2': $base-margin * 2,
+            '3': $base-margin * 4,
+            '4': $base-margin * 6,
+            '5': $base-margin * 8,
+            '6': $base-margin * 10,
+            '7': $base-margin * 12,
+            '8': $base-margin * 14,
+            '9': $base-margin * 16,
+            '10': $base-margin * 18,
+            '11': $base-margin * 20,
+            '12': $base-margin * 22,
+            '13': $base-margin * 24,
+            '14': $base-margin * 26,
+            '15': $base-margin * 28,
+        ),
     ),
-  ),
-  "margin-bottom": (
-    "prefix": "mb",
-    "values": (
-      "0": 0,
-      "1": $base-margin,
-      "2": $base-margin * 2,
-      "3": $base-margin * 4,
-      "4": $base-margin * 6,
-      "5": $base-margin * 8,
-      "6": $base-margin * 10,
-      "7": $base-margin * 12,
-      "8": $base-margin * 14,
-      "9": $base-margin * 16,
-      "10": $base-margin * 18,
-      "11": $base-margin * 20,
-      "12": $base-margin * 22,
-      "13": $base-margin * 24,
-      "14": $base-margin * 26,
-      "15": $base-margin * 28,
+    'margin-bottom': (
+        'prefix': 'mb',
+        'values': (
+            '0': 0,
+            '1': $base-margin,
+            '2': $base-margin * 2,
+            '3': $base-margin * 4,
+            '4': $base-margin * 6,
+            '5': $base-margin * 8,
+            '6': $base-margin * 10,
+            '7': $base-margin * 12,
+            '8': $base-margin * 14,
+            '9': $base-margin * 16,
+            '10': $base-margin * 18,
+            '11': $base-margin * 20,
+            '12': $base-margin * 22,
+            '13': $base-margin * 24,
+            '14': $base-margin * 26,
+            '15': $base-margin * 28,
+        ),
     ),
-  ),
-  "opacity": (
-    "prefix": "o",
-    "values": (
-      "10": 0.1,
-      "20": 0.2,
-      "30": 0.3,
-      "40": 0.4,
-      "50": 0.5,
-      "60": 0.6,
-      "70": 0.7,
-      "80": 0.8,
-      "90": 0.9,
-      "100": 1,
+    'opacity': (
+        'prefix': 'o',
+        'values': (
+            '10': 0.1,
+            '20': 0.2,
+            '30': 0.3,
+            '40': 0.4,
+            '50': 0.5,
+            '60': 0.6,
+            '70': 0.7,
+            '80': 0.8,
+            '90': 0.9,
+            '100': 1,
+        ),
     ),
-  ),
-  "border-radius": (
-    "prefix": "br",
-    "values": (
-      "default": $base-border-radius,
-      "none": 0,
-      "xs": math.div($base-border-radius, 4),
-      "sm": math.div($base-border-radius, 2),
-      "lg": $base-border-radius * 2,
-      "full": 50%,
+    'border-radius': (
+        'prefix': 'br',
+        'values': (
+            'default': $base-border-radius,
+            'none': 0,
+            'xs': math.div($base-border-radius, 4),
+            'sm': math.div($base-border-radius, 2),
+            'lg': $base-border-radius * 2,
+            'full': 50%,
+        ),
     ),
-  ),
-  "display": (
-    "prefix": "display",
-    "values": (
-      "none": none,
-      "block": block,
-      "flex": flex,
-      "inline": inline,
-      "inline-block": inline-block,
+    'display': (
+        'prefix': 'display',
+        'values': (
+            'none': none,
+            'block': block,
+            'flex': flex,
+            'inline': inline,
+            'inline-block': inline-block,
+        ),
     ),
-  ),
-  "flex-direction": (
-    "prefix": "flex-d",
-    "values": (
-      "row": row,
-      "row-reverse": row-reverse,
-      "column": column,
-      "column-reverse": column-reverse,
+    'flex-direction': (
+        'prefix': 'flex-d',
+        'values': (
+            'row': row,
+            'row-reverse': row-reverse,
+            'column': column,
+            'column-reverse': column-reverse,
+        ),
     ),
-  ),
-  "flex-wrap": (
-    "prefix": "flex-w",
-    "values": (
-      "nowrap": nowrap,
-      "wrap": wrap,
-      "wrap-reverse": wrap-reverse,
+    'flex-wrap': (
+        'prefix': 'flex-w',
+        'values': (
+            'nowrap': nowrap,
+            'wrap': wrap,
+            'wrap-reverse': wrap-reverse,
+        ),
     ),
-  ),
-  "text-align": (
-    "prefix": "text",
-    "values": (
-      "center": center,
-      "left": left,
-      "right": right,
-      "end": end,
-      "justify": justify,
-      "justify-all": justify-all,
-      "start": start,
-      "unset": unset,
-      "initial": initial,
-      "inherit": inherit,
-      "revert": revert,
+    'text-align': (
+        'prefix': 'text',
+        'values': (
+            'center': center,
+            'left': left,
+            'right': right,
+            'end': end,
+            'justify': justify,
+            'justify-all': justify-all,
+            'start': start,
+            'unset': unset,
+            'initial': initial,
+            'inherit': inherit,
+            'revert': revert,
+        ),
     ),
-  ),
-  "text-decoration": (
-    "prefix": "text-d",
-    "values": (
-      "none": none,
-      "underline": underline,
-      "line-through": line-through,
-      "overline": overline,
-      "initial": initial,
-      "inherit": inherit,
-      "revert": revert,
+    'text-decoration': (
+        'prefix': 'text-d',
+        'values': (
+            'none': none,
+            'underline': underline,
+            'line-through': line-through,
+            'overline': overline,
+            'initial': initial,
+            'inherit': inherit,
+            'revert': revert,
+        ),
     ),
-  ),
-  // font familys
-  "font-family":
-    (
-      "prefix": "ff",
-      "values": (
-        "sans-serif": sans-serif,
-        "serif": serif,
-        "monospace": monospace,
-        "system-ui": system-ui,
-        "initial": initial,
-        "inherit": inherit,
-        "revert": revert,
-      ),
-    ),
-  // font sizes
-  "font-size":
-    (
-      "prefix": "font",
-      "values": (
-        "sm": $font-size-sm,
-        "md": $base-font-size,
-        "lg": $font-size-lg,
-        "xl": $font-size-xl,
-        "xxl": $font-size-xxl,
-      ),
-    ),
-  // align items
-  "align-items":
-    (
-      "prefix": "ai",
-      "values": (
-        "center": center,
-        "flex-start": flex-start,
-        "flex-end": flex-end,
-        "baseline": baseline,
-        "stretch": stretch,
-        "initial": initial,
-        "inherit": inherit,
-        "revert": revert,
-      ),
-    ),
-  // widths
-  "width":
-    (
-      "prefix": "w",
-      "values": (
-        "auto": auto,
-        "full": 100%,
-        "1": 0.25rem,
-        "2": 0.5rem,
-      ),
-    ),
-  // shadows
-  "box-shadow":
-    (
-      "prefix": "sh",
-      "values": (
-        "default": $box-shadow,
-        "none": none,
-        "sm": $box-shadow-sm,
-        "lg": $box-shadow-lg,
-        "xl": $box-shadow-xl,
-        "xxl": $box-shadow-xxl,
-      ),
-    ),
-  // heights
-  "height":
-    (
-      prefix: "h",
-      values: (
-        "full": 100%,
-        "1": 5px,
-        "2": 10px,
-        "3": 15px,
-        "4": 20px,
-        "5": 25px,
-        "6": 30px,
-        "7": 35px,
-        "8": 40px,
-        "9": 45px,
-        "10": 50px,
-        "11": 55px,
-        "12": 60px,
-        "13": 65px,
-        "14": 70px,
-        "15": 75px,
-        "16": 80px,
-        "17": 85px,
-        "18": 90px,
-        "19": 95px,
-        "20": 100px,
-        "21": 105px,
-        "22": 110px,
-        "23": 115px,
-        "24": 120px,
-        "25": 125px,
-      ),
-    ),
+    // font familys
+    'font-family':
+        (
+            'prefix': 'ff',
+            'values': (
+                'sans-serif': sans-serif,
+                'serif': serif,
+                'monospace': monospace,
+                'system-ui': system-ui,
+                'initial': initial,
+                'inherit': inherit,
+                'revert': revert,
+            ),
+        ),
+    // font sizes
+    'font-size':
+        (
+            'prefix': 'font',
+            'values': (
+                'sm': $font-size-sm,
+                'md': $base-font-size,
+                'lg': $font-size-lg,
+                'xl': $font-size-xl,
+                'xxl': $font-size-xxl,
+            ),
+        ),
+    // align items
+    'align-items':
+        (
+            'prefix': 'ai',
+            'values': (
+                'center': center,
+                'flex-start': flex-start,
+                'flex-end': flex-end,
+                'baseline': baseline,
+                'stretch': stretch,
+                'initial': initial,
+                'inherit': inherit,
+                'revert': revert,
+            ),
+        ),
+    // widths
+    'width':
+        (
+            'prefix': 'w',
+            'values': (
+                'auto': auto,
+                'full': 100%,
+                '1': 0.25rem,
+                '2': 0.5rem,
+            ),
+        ),
+    // shadows
+    'box-shadow':
+        (
+            'prefix': 'sh',
+            'values': (
+                'default': $box-shadow,
+                'none': none,
+                'sm': $box-shadow-sm,
+                'lg': $box-shadow-lg,
+                'xl': $box-shadow-xl,
+                'xxl': $box-shadow-xxl,
+            ),
+        ),
+    // cursors
+    'cursor':
+        (
+            prefix: 'c',
+            values: (
+                'default': default,
+                'pointer': pointer,
+                'text': text,
+                'wait': wait,
+                'move': move,
+                'not-allowed': not-allowed,
+                'help': help,
+                'auto': auto,
+                'crosshair': crosshair,
+                'no-drop': no-drop,
+                'none': none,
+                'context-menu': context-menu,
+                'progress': progress,
+                'cell': cell,
+                'grab': grab,
+                'grabbing': grabbing,
+                'alias': alias,
+                'all-scroll': all-scroll,
+                'zoom-in': zoom-in,
+                'zoom-out': zoom-out,
+            ),
+        ),
+    // heights
+    'height':
+        (
+            prefix: 'h',
+            values: (
+                'full': 100%,
+                '1': 5px,
+                '2': 10px,
+                '3': 15px,
+                '4': 20px,
+                '5': 25px,
+                '6': 30px,
+                '7': 35px,
+                '8': 40px,
+                '9': 45px,
+                '10': 50px,
+                '11': 55px,
+                '12': 60px,
+                '13': 65px,
+                '14': 70px,
+                '15': 75px,
+                '16': 80px,
+                '17': 85px,
+                '18': 90px,
+                '19': 95px,
+                '20': 100px,
+                '21': 105px,
+                '22': 110px,
+                '23': 115px,
+                '24': 120px,
+                '25': 125px,
+            ),
+        ),
 );
 
 // generate utility classes
 @each $property, $map in $utilities {
-  $prefix: map-get($map, "prefix");
-  $values: map-get($map, "values");
+    $prefix: map-get($map, 'prefix');
+    $values: map-get($map, 'values');
 
-  @each $k, $v in $values {
-    @if ($k == "default") {
-      .#{$prefix} {
-        #{$property}: $v;
-      }
-    } @else {
-      .#{$prefix}-#{$k} {
-        #{$property}: $v;
-      }
+    @each $k, $v in $values {
+        @if ($k == 'default') {
+            .#{$prefix} {
+                #{$property}: $v;
+            }
+        } @else {
+            .#{$prefix}-#{$k} {
+                #{$property}: $v;
+            }
+        }
     }
-  }
 }

@@ -2,7 +2,7 @@
 home: true
 heroImage: /img/icon.png
 actionText: Get Started
-actionLink: /docs/
+actionLink: /docs/start
 
 features:
     - title: 🛠 Easy to Use

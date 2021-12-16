@@ -5622,6 +5622,86 @@ img {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
+.c {
+  cursor: default;
+}
+
+.c-pointer {
+  cursor: pointer;
+}
+
+.c-text {
+  cursor: text;
+}
+
+.c-wait {
+  cursor: wait;
+}
+
+.c-move {
+  cursor: move;
+}
+
+.c-not-allowed {
+  cursor: not-allowed;
+}
+
+.c-help {
+  cursor: help;
+}
+
+.c-auto {
+  cursor: auto;
+}
+
+.c-crosshair {
+  cursor: crosshair;
+}
+
+.c-no-drop {
+  cursor: no-drop;
+}
+
+.c-none {
+  cursor: none;
+}
+
+.c-context-menu {
+  cursor: context-menu;
+}
+
+.c-progress {
+  cursor: progress;
+}
+
+.c-cell {
+  cursor: cell;
+}
+
+.c-grab {
+  cursor: grab;
+}
+
+.c-grabbing {
+  cursor: grabbing;
+}
+
+.c-alias {
+  cursor: alias;
+}
+
+.c-all-scroll {
+  cursor: all-scroll;
+}
+
+.c-zoom-in {
+  cursor: zoom-in;
+}
+
+.c-zoom-out {
+  cursor: zoom-out;
+}
+
 .h-full {
   height: 100%;
 }
