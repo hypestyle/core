@@ -58,14 +58,14 @@ hypestyle/
 
 ## Documentation
 
-Feel free to give a star ⭐
+Feel free to give a star ⭐ <br>
 You can find the documentation [here](https://hypestyle.netlify.app/docs/).
 
 <br>
 
 ## Authors
 
-- [@lassev05](https://www.github.com/lassev05)
+-   [@lassev05](https://www.github.com/lassev05)
 
 <br>
 <br>
@@ -78,8 +78,3 @@ Code and documentation copyright (c) 2021 Hypll <strong>LLC</strong>
 <em>HypeStyle CSS is owned by <strong>Hypll LLC.</strong> <em>
 <br>
 <em>HypeStyle CSS is licensed under the <strong>MIT License.</strong></em>
-  
-  
-  
-  
-
