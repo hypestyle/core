@@ -256,6 +256,44 @@ $utilities: (
                 'revert': revert,
             ),
         ),
+    // text utilities
+    'text-owerflow':
+        (
+            'prefix': 'to',
+            'values': (
+                'ellipsis': ellipsis,
+                'clip': clip,
+                'initial': initial,
+                'inherit': inherit,
+                'revert': revert,
+            ),
+        ),
+    'text-shadow': (
+        'prefix': 'ts',
+        'values': (
+            'none': none,
+            'default': $base-text-shadow,
+            'sm': $base-text-shadow-sm,
+            'lg': $base-text-shadow-lg,
+            'xl': $base-text-shadow-xl,
+            'xxl': $base-text-shadow-xxl,
+            'initial': initial,
+            'inherit': inherit,
+            'revert': revert,
+        ),
+    ),
+    'text-transform': (
+        'prefix': 'tt',
+        'values': (
+            'none': none,
+            'uppercase': uppercase,
+            'lowercase': lowercase,
+            'capitalize': capitalize,
+            'initial': initial,
+            'inherit': inherit,
+            'revert': revert,
+        ),
+    ),
     // font sizes
     'font-size':
         (
@@ -334,6 +372,72 @@ $utilities: (
                 'zoom-out': zoom-out,
             ),
         ),
+    // backgrounds utils
+    'background-image':
+        (
+            'prefix': 'bg',
+            'values': (
+                'none': none,
+                'linear-gradient': linear-gradient,
+                'radial-gradient': radial-gradient,
+                'repeating-linear-gradient': repeating-linear-gradient,
+                'repeating-radial-gradient': repeating-radial-gradient,
+                'url': url,
+                'initial': initial,
+                'inherit': inherit,
+                'revert': revert,
+            ),
+        ),
+    'background-attachment': (
+        'prefix': 'bg-a',
+        'values': (
+            'scroll': scroll,
+            'fixed': fixed,
+            'local': local,
+            'initial': initial,
+            'inherit': inherit,
+            'revert': revert,
+        ),
+    ),
+    'background-size': (
+        'prefix': 'bg-size',
+        'values': (
+            'cover': cover,
+            'contain': contain,
+            'auto': auto,
+            'initial': initial,
+            'inherit': inherit,
+            'revert': revert,
+        ),
+    ),
+    'background-position': (
+        'prefix': 'bg-p',
+        'values': (
+            'center': center,
+            'top': top,
+            'right': right,
+            'bottom': bottom,
+            'left': left,
+            'top-left': top-left,
+            'top-right': top-right,
+            'bottom-left': bottom-left,
+            'bottom-right': bottom-right,
+        ),
+    ),
+    'background-repeat': (
+        'prefix': 'bg-r',
+        'values': (
+            'no-repeat': no-repeat,
+            'repeat': repeat,
+            'repeat-x': repeat-x,
+            'repeat-y': repeat-y,
+            'space': space,
+            'round': round,
+            'initial': initial,
+            'inherit': inherit,
+            'revert': revert,
+        ),
+    ),
     // heights
     'height':
         (

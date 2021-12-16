@@ -5530,6 +5530,90 @@ img {
   font-family: revert;
 }
 
+.to-ellipsis {
+  text-owerflow: ellipsis;
+}
+
+.to-clip {
+  text-owerflow: clip;
+}
+
+.to-initial {
+  text-owerflow: initial;
+}
+
+.to-inherit {
+  text-owerflow: inherit;
+}
+
+.to-revert {
+  text-owerflow: revert;
+}
+
+.ts-none {
+  text-shadow: none;
+}
+
+.ts {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.ts-sm {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.ts-lg {
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.ts-xl {
+  text-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.ts-xxl {
+  text-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.ts-initial {
+  text-shadow: initial;
+}
+
+.ts-inherit {
+  text-shadow: inherit;
+}
+
+.ts-revert {
+  text-shadow: revert;
+}
+
+.tt-none {
+  text-transform: none;
+}
+
+.tt-uppercase {
+  text-transform: uppercase;
+}
+
+.tt-lowercase {
+  text-transform: lowercase;
+}
+
+.tt-capitalize {
+  text-transform: capitalize;
+}
+
+.tt-initial {
+  text-transform: initial;
+}
+
+.tt-inherit {
+  text-transform: inherit;
+}
+
+.tt-revert {
+  text-transform: revert;
+}
+
 .font-sm {
   font-size: 0.75rem;
 }
@@ -5700,6 +5784,162 @@ img {
 
 .c-zoom-out {
   cursor: zoom-out;
+}
+
+.bg-none {
+  background-image: none;
+}
+
+.bg-linear-gradient {
+  background-image: linear-gradient;
+}
+
+.bg-radial-gradient {
+  background-image: radial-gradient;
+}
+
+.bg-repeating-linear-gradient {
+  background-image: repeating-linear-gradient;
+}
+
+.bg-repeating-radial-gradient {
+  background-image: repeating-radial-gradient;
+}
+
+.bg-url {
+  background-image: url;
+}
+
+.bg-initial {
+  background-image: initial;
+}
+
+.bg-inherit {
+  background-image: inherit;
+}
+
+.bg-revert {
+  background-image: revert;
+}
+
+.bg-a-scroll {
+  background-attachment: scroll;
+}
+
+.bg-a-fixed {
+  background-attachment: fixed;
+}
+
+.bg-a-local {
+  background-attachment: local;
+}
+
+.bg-a-initial {
+  background-attachment: initial;
+}
+
+.bg-a-inherit {
+  background-attachment: inherit;
+}
+
+.bg-a-revert {
+  background-attachment: revert;
+}
+
+.bg-size-cover {
+  background-size: cover;
+}
+
+.bg-size-contain {
+  background-size: contain;
+}
+
+.bg-size-auto {
+  background-size: auto;
+}
+
+.bg-size-initial {
+  background-size: initial;
+}
+
+.bg-size-inherit {
+  background-size: inherit;
+}
+
+.bg-size-revert {
+  background-size: revert;
+}
+
+.bg-p-center {
+  background-position: center;
+}
+
+.bg-p-top {
+  background-position: top;
+}
+
+.bg-p-right {
+  background-position: right;
+}
+
+.bg-p-bottom {
+  background-position: bottom;
+}
+
+.bg-p-left {
+  background-position: left;
+}
+
+.bg-p-top-left {
+  background-position: top-left;
+}
+
+.bg-p-top-right {
+  background-position: top-right;
+}
+
+.bg-p-bottom-left {
+  background-position: bottom-left;
+}
+
+.bg-p-bottom-right {
+  background-position: bottom-right;
+}
+
+.bg-r-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.bg-r-repeat {
+  background-repeat: repeat;
+}
+
+.bg-r-repeat-x {
+  background-repeat: repeat-x;
+}
+
+.bg-r-repeat-y {
+  background-repeat: repeat-y;
+}
+
+.bg-r-space {
+  background-repeat: space;
+}
+
+.bg-r-round {
+  background-repeat: round;
+}
+
+.bg-r-initial {
+  background-repeat: initial;
+}
+
+.bg-r-inherit {
+  background-repeat: inherit;
+}
+
+.bg-r-revert {
+  background-repeat: revert;
 }
 
 .h-full {

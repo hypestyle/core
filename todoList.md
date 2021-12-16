@@ -6,8 +6,6 @@
 
 -   [x] Shadow
 -   [x] Border radius
--   [] Border width
--   [] Border color
 -   [x] Font size
 -   [x] Font color
 -   [x] Font family
@@ -15,18 +13,17 @@
 -   [x] Font style
 -   [x] Text align
 -   [x] Text decoration
--   [] Text transform
--   [] Text shadow
--   [] Text overflow
+-   [x] Text transform
+-   [x] Text shadow
+-   [x] Text overflow
 -   [x] Space between
 <!-- BACKGROUNDS -->
 -   [x] Background Color
--   [] Background repeat
--   [] Background position
--   [] Background size
--   [] Background attachment
--   [] Background image
--   [] Background opacity
+-   [x] Background repeat
+-   [x] Background position
+-   [x] Background size
+-   [x] Background attachment
+-   [x] Background image
 <!-- CURSOR -->
 -   [x] Cursor Pointer
 -   [x] Cursor Auto
@@ -36,15 +33,15 @@
 -   [x] Cursor Wait
 -   [x] Cursor Help
 -   [x] Cursor Not Allowed
--   [] Cursor None
--   [] Cursor Context Menu
--   [] Cursor Cell
--   [] Cursor Progress
--   [] Cursor No Drop
--   [] Cursor Alias
--   [] Cursor Copy
--   [] Cursor Grab
--   [] Cursor Grabbing
--   [] Cursor All Scroll
--   [] Cursor Zoom In
--   [] Cursor Zoom Out
+-   [x] Cursor None
+-   [x] Cursor Context Menu
+-   [x] Cursor Cell
+-   [x] Cursor Progress
+-   [x] Cursor No Drop
+-   [x] Cursor Alias
+-   [x] Cursor Copy
+-   [x] Cursor Grab
+-   [x] Cursor Grabbing
+-   [x] Cursor All Scroll
+-   [x] Cursor Zoom In
+-   [x] Cursor Zoom Out

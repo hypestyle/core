@@ -24,6 +24,19 @@ $box-shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 $box-shadow-xl: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 $box-shadow-xxl: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 
+// text shadows
+$base-text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+$base-text-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
+$base-text-shadow-md: 0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
+$base-text-shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
+$base-text-shadow-xl: 0 14px 28px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+$base-text-shadow-xxl: 0 19px 38px rgba(0, 0, 0, 0.3),
+    0 15px 12px rgba(0, 0, 0, 0.22);
+
 // theme colors
 $primary: #326dee !default;
 $secondary: #1ac886 !default;
@@ -33,18 +46,18 @@ $teal: #20c997 !default;
 
 // color palette
 $colors: (
-  "primary": $primary,
-  "secondary": $secondary,
-  "error": $error,
-  "info": $info,
-  "teal": $teal,
-  "blue": #1919e6,
-  "red": #e61919,
-  "yellow": #e6e619,
-  "green": #19e635,
-  "orange": #ffa600,
-  "purple": #9900ff,
-  "gray": #808080,
-  "black": black,
-  "white": white,
+    'primary': $primary,
+    'secondary': $secondary,
+    'error': $error,
+    'info': $info,
+    'teal': $teal,
+    'blue': #1919e6,
+    'red': #e61919,
+    'yellow': #e6e619,
+    'green': #19e635,
+    'orange': #ffa600,
+    'purple': #9900ff,
+    'gray': #808080,
+    'black': black,
+    'white': white,
 );
