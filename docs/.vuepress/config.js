@@ -31,7 +31,7 @@ module.exports = {
             'link',
             {
                 rel: 'stylesheet',
-                href: 'https://unpkg.com/hypestyle@1.0.0/dist/hypestyle.min.css',
+                href: 'https://unpkg.com/hypestyle@0.1.4/dist/css/hypestyle.min.css',
             },
         ],
         [
@@ -79,7 +79,7 @@ module.exports = {
             {
                 title: 'Introduction',
                 collapsable: false,
-                path: '/docs/start/',
+                path: '/docs/',
             },
 
             {
@@ -94,20 +94,55 @@ module.exports = {
             {
                 title: 'Utilities',
                 collapsable: false,
+            },
+
+            {
+                title: 'Flex & Grid',
+                collapsable: false,
                 children: [
-                    '/docs/utilities/alignment',
-                    '/docs/utilities/border-radius',
-                    '/docs/utilities/padding',
-                    '/docs/utilities/margin',
-                    '/docs/utilities/display',
-                    '/docs/utilities/flex-direction',
-                    '/docs/utilities/flex-wrap',
-                    '/docs/utilities/text-decoration',
-                    '/docs/utilities/font-family',
-                    '/docs/utilities/font-size',
-                    '/docs/utilities/height',
-                    '/docs/utilities/align-items',
-                    '/docs/utilities/shadows',
+                    '/docs/utilities/flex/flex-direction',
+                    '/docs/utilities/flex/flex-wrap',
+                ],
+            },
+
+            {
+                title: 'Typography',
+                collapsable: false,
+                children: [
+                    '/docs/utilities/typography/font-family',
+                    '/docs/utilities/typography/font-size',
+                    '/docs/utilities/typography/alignment',
+                    '/docs/utilities/typography/text-transform',
+                    '/docs/utilities/typography/text-decoration',
+                    '/docs/utilities/typography/text-owerflow',
+                ],
+            },
+
+            {
+                title: 'Spacing',
+                collapsable: false,
+                children: ['/docs/utilities/margin', '/docs/utilities/padding'],
+            },
+
+            {
+                title: 'Sizeing',
+                collapsable: false,
+                children: ['/docs/utilities/height', '/docs/utilities/width'],
+            },
+
+            {
+                title: 'Backgrounds',
+                collapsable: false,
+                children: [],
+            },
+
+            {
+                title: 'Colors',
+                collapsable: false,
+                children: [
+                    '/docs/utilities/color',
+                    '/docs/utilities/background-color',
+                    '/docs/utilities/border-color',
                 ],
             },
         ],

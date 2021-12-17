@@ -332,10 +332,26 @@ $utilities: (
                 '2': 0.5rem,
             ),
         ),
+    // transitions
+    'transition':
+        (
+            'prefix': 'tr',
+            'values': (
+                'default': $base-transition,
+                'sm': $base-transition-sm,
+                'md': $base-transition-md,
+                'lg': $base-transition-lg,
+                'xl': $base-transition-xl,
+                'xxl': $base-transition-xxl,
+                'initial': initial,
+                'inherit': inherit,
+                'revert': revert,
+            ),
+        ),
     // shadows
     'box-shadow':
         (
-            'prefix': 'sh',
+            'prefix': 'bs',
             'values': (
                 'default': $box-shadow,
                 'none': none,

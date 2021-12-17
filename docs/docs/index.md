@@ -1,12 +1,12 @@
 ---
 tags:
-  - install
-  - docs
-  - cdn
-  - package manager
-  - included
-  - inclued
-  - what is included
+    - install
+    - docs
+    - cdn
+    - package manager
+    - included
+    - inclued
+    - what is included
 
 footer: MIT Licensed | Copyright © 2021
 ---
@@ -30,8 +30,8 @@ Copy-paste the stylesheet link below and add it to your project.
 
 ```html
 <link
-  rel="stylesheet"
-  href="https://unpkg.com/hypestyle@0.1.3/dist/hypestyle.min.css"
+    rel="stylesheet"
+    href="https://unpkg.com/hypestyle@0.1.3/dist/hypestyle.min.css"
 />
 ```
 
@@ -75,24 +75,20 @@ hypestyle/
 ```html
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- HypeStyle CSS -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/hypestyle@0.1.3/dist/hypestyle.min.css"
-    />
+        <!-- HypeStyle CSS -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/hypestyle@0.1.3/dist/hypestyle.min.css"
+        />
 
-    <title>Yeah i using HypeStyle CSS!</title>
-  </head>
-  <body>
-    <h1>Hello world!</h1>
-  </body>
+        <title>Yeah i using HypeStyle CSS!</title>
+    </head>
+    <body>
+        <h1>Hello world!</h1>
+    </body>
 </html>
 ```
-
-## Do you have
-
-Eyy if you have any questions or suggestions, you can contact us. On the [GitHub]() page.

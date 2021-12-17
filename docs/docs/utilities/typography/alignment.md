@@ -1,5 +1,13 @@
 ---
-title: Alignment
+title: Text Alignment
+
+tags: center
+    left
+    right
+    justify
+    flex
+    inline
+    block
 ---
 
 # Alignment Classes
