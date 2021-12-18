@@ -92,7 +92,7 @@ module.exports = {
             },
 
             {
-                title: 'Utilities',
+                title: '🔨 Utilities',
                 collapsable: false,
             },
 
@@ -112,9 +112,9 @@ module.exports = {
                     '/docs/utilities/typography/font-family',
                     '/docs/utilities/typography/font-size',
                     '/docs/utilities/typography/alignment',
+                    '/docs/utilities/typography/text-owerflox',
                     '/docs/utilities/typography/text-transform',
                     '/docs/utilities/typography/text-decoration',
-                    '/docs/utilities/typography/text-owerflow',
                 ],
             },
 
@@ -137,12 +137,22 @@ module.exports = {
             },
 
             {
+                title: 'Shadows & Effects',
+                collapsable: false,
+                children: [
+                    '/docs/utilities/effects/box-shadow',
+                    '/docs/utilities/effects/text-shadow',
+                    '/docs/utilities/effects/opacity',
+                    '/docs/utilities/effects/transition',
+                ],
+            },
+
+            {
                 title: 'Colors',
                 collapsable: false,
                 children: [
-                    '/docs/utilities/color',
-                    '/docs/utilities/background-color',
-                    '/docs/utilities/border-color',
+                    '/docs/utilities/colors/color-pattle',
+                    '/docs/utilities/colors/background-color',
                 ],
             },
         ],
