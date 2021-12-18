@@ -83,6 +83,12 @@ module.exports = {
             },
 
             {
+                title: 'CLI',
+                collapsable: false,
+                children: ['/docs/cli/installation'],
+            },
+
+            {
                 title: 'Components',
                 collapsable: false,
                 children: [
