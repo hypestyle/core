@@ -2,7 +2,7 @@
 title: Installation
 ---
 
-## Installation
+## Cli Installation
 
 To install our cli you can use the following commands
 

@@ -20,7 +20,7 @@
     },
     "scripts": {
         "css": "gulp",
-        "dev": "npx vuepress dev docs",
+        "dev": "npx vuepress dev docs --port=3000",
         "build": "npx vuepress build docs",
         "publish": "docs/.vuepress/dist",
         "prepare": "husky install",

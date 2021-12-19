@@ -48,13 +48,13 @@ module.exports = {
     themeConfig: {
         // some settings
         logo: '/img/icon.png',
-        searchPlaceholder: 'Search in the docs',
+        searchPlaceholder: 'Search...',
         nextLinks: true,
         smoothScroll: true,
         lastUpdated: true,
         backToTop: true,
         search: true,
-        searchMaxSuggestions: 15,
+        searchMaxSuggestions: 10,
         // repo: "lassev05/hypestyle",
         // repoLabel: "✨ Contribute!",
 
@@ -85,7 +85,7 @@ module.exports = {
             {
                 title: 'CLI',
                 collapsable: false,
-                children: ['/docs/cli/installation'],
+                children: ['/docs/cli/installation', '/docs/cli/usage'],
             },
 
             {
