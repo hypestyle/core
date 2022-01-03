@@ -1,0 +1,13 @@
+{
+    "name": "docs",
+    "version": "1.0.0",
+    "description": "Docs for hypestyle",
+    "main": "index.js",
+    "scripts": {
+        "dev": "npx docsify-cli start",
+        "deploy": "npx netlify-cli deploy --prod"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
