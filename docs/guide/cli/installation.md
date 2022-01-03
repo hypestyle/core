@@ -1,3 +1,5 @@
+#### CLI
+
 ## Cli Installation
 
 To install our cli you can use the following commands
