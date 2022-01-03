@@ -18,7 +18,7 @@ Copy-paste the stylesheet link below and add it to your project.
 />
 ```
 
-Hint you can use our [cli](/docs/cli/installation) to create a project.
+Hint you can use our [cli](/guide/cli/installation) to create a project.
 
 ### Intall with package manager
 
