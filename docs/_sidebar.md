@@ -22,6 +22,13 @@
 
     <br>
 
+-   **Typography**
+
+    -   [Font Size](/guide/typography/font-size)
+    -   [Font Family](/guide/typography/font-family)
+
+    <br>
+
 -   **Effects & Shadows**
 
     -   [Box Shadow](/guide/utilities/effects/box-shadow)
