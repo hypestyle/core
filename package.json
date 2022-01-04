@@ -1,5 +1,6 @@
 {
     "name": "hypestyle",
+    "description": "HypeStyle CSS is a collection of CSS utilities for web development.    ",
     "version": "0.1.5",
     "main": "index.js",
     "repository": "https://github.com/lassev05/HypeStyle.git",

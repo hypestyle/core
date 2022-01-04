@@ -1,6 +1,6 @@
 #### Components
 
-### HypeStyle Buttons
+### Buttons
 
 So you want to make a button? Well, you can use the HypeStyle button component.
 Down below you can see a button thats styled with the HypeStyle button component.

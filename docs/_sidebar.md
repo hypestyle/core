@@ -17,16 +17,20 @@
 
 -   **Components**
 
-    -   [Buttons](/guide/components/buttons)
+    -   [Card](/guide/components/card)
+    -   [Button](/guide/components/button)
     -   [Navbar](/guide/components/navbar)
 
     <br>
 
 -   **Typography**
 
-    -   [Font Size](/guide/typography/font-size)
-    -   [Font Family](/guide/typography/font-family)
-    -   [Text alignment](/guide/typography/text-align)
+    -   [Font Size](/guide/utilities/typography/font-size)
+    -   [Font Family](/guide/utilities/typography/font-family)
+    -   [Text alignment](/guide/utilities/typography/text-align)
+    -   [Text Decoration](/guide/utilities/typography/text-decoration)
+    -   [Text Transform](/guide/utilities/typography/text-transform)
+    -   [Text Owerflow](/guide/utilities/typography/text-overflow)
 
     <br>
 
