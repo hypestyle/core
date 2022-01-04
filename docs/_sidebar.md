@@ -26,6 +26,7 @@
 
     -   [Font Size](/guide/typography/font-size)
     -   [Font Family](/guide/typography/font-family)
+    -   [Text alignment](/guide/typography/text-align)
 
     <br>
 

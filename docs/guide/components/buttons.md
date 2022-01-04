@@ -83,12 +83,14 @@ You can also add text and bg hover to the buttons. <br>
 Same way just use `text-hover-COLOR`
 
 ```html
-<button class="btn btn-primary text-hover-black text-whit">
+<button
+    class="btn btn-primary bg-hover-black text-hover-white text-white tr-sm"
+>
     Primary Button With Hover
 </button>
 ```
 
-<button class="btn btn-primary text-hover-black text-white">
+<button class="btn btn-primary bg-hover-black text-hover-white text-white tr-sm">
   Primary Button With Hover
 </button>
 
