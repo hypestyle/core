@@ -257,31 +257,32 @@ $utilities: (
             ),
         ),
     // text utilities
-    'text-owerflow':
+    // 'text-owerflow':
+    //     (
+    //         'prefix': 'to',
+    //         'values': (
+    //             'ellipsis': ellipsis,
+    //             'clip': clip,
+    //             'initial': initial,
+    //             'inherit': inherit,
+    //             'revert': revert,
+    //         ),
+    //     ),
+    'text-shadow':
         (
-            'prefix': 'to',
+            'prefix': 'ts',
             'values': (
-                'ellipsis': ellipsis,
-                'clip': clip,
+                'none': none,
+                'default': $base-text-shadow,
+                'sm': $base-text-shadow-sm,
+                'lg': $base-text-shadow-lg,
+                'xl': $base-text-shadow-xl,
+                'xxl': $base-text-shadow-xxl,
                 'initial': initial,
                 'inherit': inherit,
                 'revert': revert,
             ),
         ),
-    'text-shadow': (
-        'prefix': 'ts',
-        'values': (
-            'none': none,
-            'default': $base-text-shadow,
-            'sm': $base-text-shadow-sm,
-            'lg': $base-text-shadow-lg,
-            'xl': $base-text-shadow-xl,
-            'xxl': $base-text-shadow-xxl,
-            'initial': initial,
-            'inherit': inherit,
-            'revert': revert,
-        ),
-    ),
     'text-transform': (
         'prefix': 'tt',
         'values': (

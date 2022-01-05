@@ -1219,11 +1219,6 @@ img{ max-width: 100%; }
 .ff-initial{ font-family: initial; }
 .ff-inherit{ font-family: inherit; }
 .ff-revert{ font-family: revert; }
-.to-ellipsis{ text-owerflow: ellipsis; }
-.to-clip{ text-owerflow: clip; }
-.to-initial{ text-owerflow: initial; }
-.to-inherit{ text-owerflow: inherit; }
-.to-revert{ text-owerflow: revert; }
 .ts-none{ text-shadow: none; }
 .ts{ text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 .ts-sm{ text-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }

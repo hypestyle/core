@@ -1,3 +1,5 @@
+**#BlackLivesMatter**
+
 -   [Home](/)
 
     <br>
@@ -30,7 +32,7 @@
     -   [Text alignment](/guide/utilities/typography/text-align)
     -   [Text Decoration](/guide/utilities/typography/text-decoration)
     -   [Text Transform](/guide/utilities/typography/text-transform)
-    -   [Text Owerflow](/guide/utilities/typography/text-overflow)
+    -   [Text Color](/guide/utilities/typography/text-color)
 
     <br>
 
