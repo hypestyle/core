@@ -12,11 +12,11 @@
 
 <div align="center">
 
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?style=for-the-badge)](https://github.com/lassev05/hypestyle/blob/master/LICENSE)
-[![NPM](https://img.shields.io/npm/v/hypestyle?style=for-the-badge)](https://npmjs.com/package/hypestyle)
-[![GitHub](https://img.shields.io/github/stars/lassev05/hypestyle?style=for-the-badge)](#)
-[![GitHub](https://img.shields.io/github/commit-activity/w/hypestyle/hypestyle?style=for-the-badge)](#)
-[![NPM](https://img.shields.io/jsdelivr/npm/hm/hypestyle?label=downloads&style=for-the-badge)](https://npmjs.com/package/hypestyle)
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?style=plastic)](https://github.com/lassev05/hypestyle/blob/master/LICENSE)
+[![NPM](https://img.shields.io/npm/v/hypestyle?style=plastic)](https://npmjs.com/package/hypestyle)
+[![GitHub](https://img.shields.io/github/stars/lassev05/hypestyle?style=plastic)](#)
+[![GitHub](https://img.shields.io/github/commit-activity/w/hypestyle/hypestyle?style=plastic)](#)
+[![NPM](https://img.shields.io/jsdelivr/npm/hm/hypestyle?label=downloads&style=plastic)](https://npmjs.com/package/hypestyle)
   
  
 
