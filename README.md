@@ -18,63 +18,17 @@
 
 </div>
 
-### Table of Contents
+------
 
-<li>
-    <a href="https://hypestyle.netlify.app/docs">Introduction</a>
+## Contributing
 
-</li>
+If you're interested in contributing to **Hypestyle CSS**, then please read our [contributing.md](https://github.com/hypestyle/HypeStyle/blob/main/CONTRIBUTING.md)
 
-<li>
-    <a href="https://hypestyle.netlify.app/docs/#getting-started">Installation</a>
-</li>
-<li>
-    <a href="https://github.com/lassev05/HypeStyle/blob/main/LICENSE">License</a>
-</li>
-<li>
-    <a href="https://github.com/lassev05/HypeStyle/blob/main/CONTRIBUTING.md">Contributing</a>
-</li>
-<li>
-    <a href="https://github.com/lassev05/HypeStyle/discussions/new?category=q-a">Questions</a>
-</li>
-
-<ul>
-
-<br>
-<br>
-
-## What's included
-
-When you install HypeStyle CSS, you will get several CSS utilities for web development. So down here you will find a list of what is included.
-
-```text
-hypestyle/
-├── dist/
-│   ├── hypestyle.min.css
-└──
-```
-
-<br>
 
 ## Documentation
 
-Feel free to give a star ⭐ <br>
-You can find the documentation [here](https://hypestyle.netlify.app/docs/).
+You can see the entire documentation on the [website](https://hypestyle.netlify.app) (hypestyle.netlify.app)
 
-<br>
+## Community
 
-## Authors
-
--   [@lassev05](https://www.github.com/lassev05)
-
-<br>
-<br>
-
-## Copyright
-
-Code and documentation copyright (c) 2021 Hypll <strong>LLC</strong>
-<br>
-<br>
-<em>HypeStyle CSS is owned by <strong>Hypll LLC.</strong> <em>
-<br>
-<em>HypeStyle CSS is licensed under the <strong>MIT License.</strong></em>
+Need help? You can ask questions on our [discussions](https://github.com/hypestyle/hypestyle/discussions) page.
