@@ -32,3 +32,5 @@ You can see the entire documentation on the [website](https://hypestyle.netlify.
 ## Community
 
 Need help? You can ask questions on our [discussions](https://github.com/hypestyle/hypestyle/discussions) page.
+You can also give suggestions and more. We have an **Open Collective** page also you can check out if you want. Click [here](https://opencollective.com/hypestyle-css)
+
