@@ -1,0 +1,44 @@
+{
+    "name": "hypestyle-cli",
+    "version": "3.0.0",
+    "description": "This is a cli tool to create a hyperstyle project",
+    "main": "src/index.js",
+    "bin": {
+        "create-hypestyle-app": "src/index.js"
+    },
+    "scripts": {
+        "start": "node src/index.js"
+    },
+    "keywords": [
+        "cli",
+        "hypestyle",
+        "hypestyle-cli"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@types/chalk-animation": "^1.6.1",
+        "@types/inquirer": "^8.1.3",
+        "chalk": "4.1.2",
+        "chalk-animation": "^1.6.0",
+        "fs-extra": "^10.0.0",
+        "inquirer": "^8.2.0",
+        "meow": "^10.1.2",
+        "rcnlx": "^1.2.1",
+        "semver": "^7.3.5"
+    },
+    "devDependencies": {
+        "eslint": "^8.4.1"
+    },
+    "directories": {
+        "test": "tests"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hypestyle/cli.git"
+    },
+    "bugs": {
+        "url": "https://github.com/hypestyle/cli/issues"
+    },
+    "homepage": "https://github.com/hypestyle/cli#readme"
+}
