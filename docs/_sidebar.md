@@ -40,5 +40,6 @@
 
     -   [Box Shadow](/guide/utilities/effects/box-shadow)
     -   [Text Shadow](/guide/utilities/effects/text-shadow)
+    -   [Opacity](/guide/utilities/effects/opacity)
 
     <br>
