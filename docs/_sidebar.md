@@ -25,6 +25,12 @@
 
     <br>
 
+-   **Sizing & Spaceing**
+
+    -   [Width](/guide/utilities/Sizing/width)
+
+    <br>
+
 -   **Typography**
 
     -   [Font Size](/guide/utilities/typography/font-size)
