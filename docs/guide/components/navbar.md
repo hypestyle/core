@@ -33,6 +33,6 @@ We all need a navigation bar to our website. So hypestyle created that! But not 
 
 <br>
 
-You can use all the [colors]("/") in the color pattle to customize the navigation bar for the background
+You can use all the [colors]("/guide/utilities/typography/text-color") in the color pattle to customize the navigation bar for the background
 <br>
 <code>class="navbar-(COLOR)"</code>

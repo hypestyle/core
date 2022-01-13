@@ -1,9 +1,9 @@
 {
     "name": "hypestyle",
     "description": "HypeStyle CSS is a collection of CSS utilities for web development.    ",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "main": "index.js",
-    "repository": "https://github.com/lassev05/HypeStyle.git",
+    "repository": "https://github.com/hypestyle/HypeStyle.git",
     "homepage": "https://hypestyle.netlify.app/",
     "author": "devlassev <vestergaardlasse2@gmail.com>",
     "license": "MIT",
