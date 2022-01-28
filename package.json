@@ -28,7 +28,6 @@
     "devDependencies": {
         "@vuepress/plugin-back-to-top": "^1.8.2",
         "eslint": "^8.3.0",
-        "gulp-css-format": "^0.1.2",
-        "husky": "^7.0.4"
+        "gulp-css-format": "^0.1.2"
     }
 }

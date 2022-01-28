@@ -52,6 +52,7 @@ inquirer.prompt(QUESTIONS).then((answers) => {
     console.log(`cd ${chalk.redBright(projectName)}`)
     console.log(`npm run ${chalk.blueBright('dev')}`)
     console.log()
+    console.log(`${chalk.greenBright('Happy coding!')}`)
 })
 
 function createDirectoryContents(templatePath, newProjectPath) {

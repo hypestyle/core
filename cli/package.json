@@ -1,10 +1,12 @@
 {
     "name": "hypestyle-cli",
-    "version": "3.0.0",
+    "version": "3.0.1",
     "description": "This is a cli tool to create a hyperstyle project",
     "main": "src/index.js",
     "bin": {
-        "create-hypestyle-app": "src/index.js"
+        "create-hypestyle-app": "src/index.js",
+        "create-hypestyle": "src/index.js",
+        "new": "src/index.js"
     },
     "scripts": {
         "start": "node src/index.js"
