@@ -1,7 +1,7 @@
 {
     "name": "hypestyle",
     "description": "Small, useful CSS library build on utility classes & components.",
-    "version": "0.1.8-4",
+    "version": "0.1.9",
     "main": "gulpfile.js",
     "repository": "https://github.com/hypestyle/HypeStyle.git",
     "homepage": "https://hypestyle.netlify.app/",

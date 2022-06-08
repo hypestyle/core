@@ -52,6 +52,53 @@ Read about how to use the Form classes to your forms.
     />
 </div>
 
+### Form Disabled
+
+```html
+<div class="form-group">
+    <label>Email address</label>
+    <input
+        type="email"
+        class="form-control form-invalid"
+        placeholder="Enter email"
+        disabled
+    />
+</div>
+```
+
+<div class="form-group">
+    <label>Email address</label>
+    <input
+        type="email"
+        class="form-control form-invalid"
+        placeholder="Enter email"
+        disabled
+    />
+</div>
+
+### Form valid/invalid
+
+```html
+<div class="form-group">
+    <label>Email address</label>
+    <input
+        type="email"
+        class="form-control form-invalid form-valid"
+        placeholder="Enter email"
+    />
+</div>
+```
+
+<div class="form-group">
+    <label>Email address</label>
+    <input
+        type="email"
+        class="form-control form-invalid form-valid"
+        placeholder="Enter email"
+        required
+    />
+</div>
+
 ## Form Label
 
 The form label have is already styled.

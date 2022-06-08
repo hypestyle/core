@@ -14,7 +14,7 @@ Copy-paste the stylesheet link below and add it to your project.
 ```html
 <link
     rel="stylesheet"
-    href="https://unpkg.com/hypestyle@0.1.8-4/dist/css/hypestyle.min.css"
+    href="https://unpkg.com/hypestyle@0.1.9/dist/css/hypestyle.min.css"
 />
 ```
 
@@ -63,7 +63,7 @@ hypestyle/
         <!-- HypeStyle CSS -->
         <link
             rel="stylesheet"
-            href="https://unpkg.com/hypestyle@0.1.8-4/dist/css/hypestyle.min.css"
+            href="https://unpkg.com/hypestyle@0.1.9/dist/css/hypestyle.min.css"
         />
 
         <title>Yeah i using HypeStyle CSS!</title>

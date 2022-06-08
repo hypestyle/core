@@ -1,6 +1,6 @@
 /* 
- - HypeStyle CSS v1.0.1 (https://hypestyle.netlify.app)
- - Copyright 2021 Hypll Development. / HypeStyle LABS
+ - HypeStyle CSS v0.1.9 (https://hypestyle.netlify.app)
+ - Copyright 2022 Hypll Development. / HypeStyle LABS
  - Licensed under MIT (https://github.com/hypestyle/hypestyle/blob/master/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css?family=Abel|Anton|Cabin|Dancing+Script|Indie+Flower|Lacquer|Lato|Lobster|Long+Cang|Lora|Ma+Shan+Zheng|Montserrat|Muli|Open+Sans|Oswald|Pacifico|Raleway|Roboto&display=swap");
@@ -1063,9 +1063,9 @@ img{ max-width: 100%; }
 .form-group input:disabled,.form-group textarea:disabled,.form-group select:disabled{ background-color: #e9ecef; }
 .form-group input::placeholder,.form-group textarea::placeholder,.form-group select::placeholder{ color: #ccc; }
 .form-group input:read-only,.form-group textarea:read-only,.form-group select:read-only{ background-color: #e9ecef; }
-.form-group input .form-invalid:invalid,.form-group textarea .form-invalid:invalid,.form-group select .form-invalid:invalid{ border-color: #dc3545; }
-.form-group input .form-success:valid,.form-group textarea .form-success:valid,.form-group select .form-success:valid{ border-color: #28a745; }
 .form-group input .form-checkbox,.form-group textarea .form-checkbox,.form-group select .form-checkbox{ margin-right: 0.5rem; }
+.form-group .form-invalid:invalid{ border-color: #dc3545; }
+.form-group .form-valid:valid{ border-color: #28a745; }
 .p-0{ padding: 0; }
 .p-1{ padding: 0.75rem; }
 .p-2{ padding: 1.5rem; }
