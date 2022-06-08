@@ -7,7 +7,7 @@
 <h3 align="center">HypeStyle CSS</h3>
 
 <p align="center">
-  HypeStyle CSS is a collection of CSS utilities for web development.
+  Small, useful CSS library build on utility classes & components
   <br>
 
 <div align="center">
@@ -17,17 +17,14 @@
 [![GitHub](https://img.shields.io/github/stars/lassev05/hypestyle?style=plastic)](#)
 [![GitHub](https://img.shields.io/github/commit-activity/w/hypestyle/hypestyle?style=plastic)](#)
 [![NPM](https://img.shields.io/jsdelivr/npm/hm/hypestyle?label=downloads&style=plastic)](https://npmjs.com/package/hypestyle)
-  
- 
 
 </div>
 
-------
+---
 
 ## Contributing
 
 If you're interested in contributing to **Hypestyle CSS**, then please read our [contributing.md](https://github.com/hypestyle/HypeStyle/blob/main/CONTRIBUTING.md)
-
 
 ## Documentation
 
@@ -37,4 +34,3 @@ You can see the entire documentation on the [website](https://hypestyle.netlify.
 
 Need help? You can ask questions on our [discussions](https://github.com/hypestyle/hypestyle/discussions) page.
 You can also give suggestions and more. We have an **Open Collective** page also you can check out if you want. Click [here](https://opencollective.com/hypestyle-css)
-
