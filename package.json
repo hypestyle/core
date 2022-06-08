@@ -20,12 +20,14 @@
         "vuepress-theme-default-prefers-color-scheme": "^2.0.0"
     },
     "scripts": {
-        "css": "gulp",
-        "dev": "npx docsify-cli serve docs --port=3000",
+        "dev:gulp": "gulp",
+        "dev:website": "npx docsify-cli serve docs --port=3000",
+        "dev": "concurrently --kill-others \"pnpm run dev:gulp\" \"pnpm run dev:website\"",
         "deploy": "npx netlify-cli deploy --prod"
     },
     "devDependencies": {
         "@vuepress/plugin-back-to-top": "^1.8.2",
+        "concurrently": "^7.2.1",
         "eslint": "^8.3.0",
         "gulp-css-format": "^0.1.2"
     }
