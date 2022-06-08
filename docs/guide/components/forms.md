@@ -30,6 +30,36 @@ Read about how to use the Form classes to your forms.
 </form>
 ```
 
+## Form Group
+
+```html
+<div class="form-group">
+    <label>Email address</label>
+    <input
+        type="email"
+        class="form-control form-invalid"
+        placeholder="Enter email"
+    />
+</div>
+```
+
+<div class="form-group">
+    <label>Email address</label>
+    <input
+        type="email"
+        class="form-control form-invalid"
+        placeholder="Enter email"
+    />
+</div>
+
+## Form Label
+
+The form label have is already styled.
+
+```html
+<label>Email address</label>
+```
+
 ## Form classes
 
 | Class        | Properties                                                               |
