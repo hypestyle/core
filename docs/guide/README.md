@@ -42,7 +42,7 @@ When you install HypeStyle CSS, you will get several CSS utilities for web devel
 
 ```text
 hypestyle/
-├── dist/
+├── dist/css/
 │   ├── hypestyle.min.css
 └──
 ```
