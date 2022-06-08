@@ -22,6 +22,7 @@
     -   [Card](/guide/components/card)
     -   [Button](/guide/components/button)
     -   [Navbar](/guide/components/navbar)
+    -   [Forms](/guide/components/forms)
 
     <br>
 
