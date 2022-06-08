@@ -22,8 +22,7 @@
     "scripts": {
         "css": "gulp",
         "dev": "npx docsify-cli serve docs --port=3000",
-        "deploy": "npx netlify-cli deploy --prod",
-        "prepare": "husky install"
+        "deploy": "npx netlify-cli deploy --prod"
     },
     "devDependencies": {
         "@vuepress/plugin-back-to-top": "^1.8.2",
