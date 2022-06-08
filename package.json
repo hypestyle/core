@@ -1,11 +1,11 @@
 {
     "name": "hypestyle",
-    "description": "HypeStyle CSS is a collection of CSS utilities for web development.    ",
-    "version": "0.1.6",
-    "main": "index.js",
+    "description": "Small, useful CSS library build on utility classes & components.",
+    "version": "0.1.8-4",
+    "main": "gulpfile.js",
     "repository": "https://github.com/hypestyle/HypeStyle.git",
     "homepage": "https://hypestyle.netlify.app/",
-    "author": "devlassev <vestergaardlasse2@gmail.com>",
+    "author": "Lasse <vestergaardlasse2@gmail.com>",
     "license": "MIT",
     "dependencies": {
         "glob-parent": "5.1.2",
@@ -22,8 +22,8 @@
     "scripts": {
         "dev:gulp": "gulp",
         "dev:website": "npx docsify-cli serve docs --port=3000",
-        "dev": "concurrently --kill-others \"pnpm run dev:gulp\" \"pnpm run dev:website\"",
-        "deploy": "npx netlify-cli deploy --prod"
+        "dev:deploy": "netlify deploy --prod",
+        "dev": "concurrently --kill-others \"pnpm run dev:gulp\" \"pnpm run dev:website\""
     },
     "devDependencies": {
         "@vuepress/plugin-back-to-top": "^1.8.2",

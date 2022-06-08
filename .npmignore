@@ -12,4 +12,5 @@ composer.json
 tasks.md
 todoList.md
 pnpm-lock.yaml
-
+.netlify
+.github

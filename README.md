@@ -7,7 +7,7 @@
 <h3 align="center">HypeStyle CSS</h3>
 
 <p align="center">
-  Small, useful CSS library build on utility classes & components
+  Small, useful CSS library build on utility classes & components.
   <br>
 
 <div align="center">
