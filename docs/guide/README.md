@@ -23,6 +23,10 @@ Hint you can use our [cli](/guide/cli/installation) to create a project.
 ### Intall with package manager
 
 ```bash
+pnpm add hypestyle
+```
+
+```bash
 yarn add hypestyle
 ```
 
