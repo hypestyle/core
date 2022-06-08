@@ -22,6 +22,8 @@
 
 ---
 
+To support Hypestyle development, then feel free to give a star ⭐️
+
 ## Contributing
 
 If you're interested in contributing to **Hypestyle CSS**, then please read our [contributing.md](https://github.com/hypestyle/HypeStyle/blob/main/CONTRIBUTING.md)
