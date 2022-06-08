@@ -31,5 +31,17 @@
         &:read-only {
             background-color: #e9ecef;
         }
+
+        .form-invalid:invalid {
+            border-color: #dc3545;
+        }
+
+        .form-success:valid {
+            border-color: #28a745;
+        }
+
+        .form-checkbox {
+            margin-right: 0.5rem;
+        }
     }
 }
