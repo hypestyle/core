@@ -2,46 +2,67 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Documentation Start
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Get started HypeStyle CSS to build your own websites easy. To learn more about you can read the documentation.
+We have tryed to make the documentation as easy as possible. As much we can.
 
 ## Getting Started
 
-Get started by **creating a new site**.
+So you want to start using HypeStyle CSS? And you dont no how to start? Well, you follow the steps below.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+### CSS
 
-### What you'll need
+Copy-paste the stylesheet link below and add it to your project.
 
-- [Node.js](https://nodejs.org/en/download/) version 14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
+```html
+<link
+    rel="stylesheet"
+    href="https://unpkg.com/hypestyle@0.1.9/dist/css/hypestyle.min.css"
+/>
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+Hint: You can get started by using our [CLI](/docs/category/cli) tool.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
+### Intall with package manager
 
 ```bash
-cd my-website
-npm run start
+pnpm add hypestyle
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+```bash
+npm install hypestyle
+```
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+```bash
+yarn add hypestyle
+```
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+## Start Template
+
+Here is a simple example of how to start using HypeStyle CSS.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- HypeStyle CSS -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/hypestyle@0.1.9/dist/css/hypestyle.min.css"
+        />
+
+        <title>Yeah i using HypeStyle CSS!</title>
+    </head>
+    <body>
+        <h1>Hello world!</h1>
+    </body>
+</html>
+```
+
+
+
+

@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Hypestyle CSS',
   tagline: 'Small, useful CSS library build on utility classes & components.',
-  url: 'https://hypestyle.netlify.aoo',
+  url: 'https://lassv-hypestyle-hypestyle-4jg7qw674276w7-3000.githubpreview.dev',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -19,12 +19,10 @@ const config = {
   organizationName: 'hypestyle', // Usually your GitHub org/user name.
   projectName: 'hypestyle', // Usually your repo name.
 
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
+  
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', "da"],
   },
 
   presets: [
@@ -56,22 +54,35 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+
+      //algolia: {
+      //  apiKey: '',
+     //   indexName: '',
+      //  contextualSearch: true,
+     //   placeholder: 'Search in the docs...',
+     //   appId: ""
+
+    //  },
+
+   
+
+
       navbar: {
         title: 'Hypestyle',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Hypestyle Logo',
+          src: 'img/icon.png',
         },
         items: [
           {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Documentation',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/hypestyle/hypestyle',
             label: 'GitHub',
             position: 'right',
           },
@@ -84,7 +95,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Documentation',
                 to: '/docs/intro',
               },
             ],
@@ -93,16 +104,16 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Open Collective',
+                href: 'https://opencollective.com/hypestyle-css',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'GitHub Discussion',
+                href: 'https://github.com/hypestyle/HypeStyle/discussions',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/hypll_dev',
               },
             ],
           },
@@ -120,12 +131,16 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Hypll Software. - Hypestylelabs`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+
+      // Search config.
+      // @ts-ignore
+    
     }),
 };
 
