@@ -1058,12 +1058,12 @@ img{ max-width: 100%; }
 .navbar-white{ background-color: white; }
 .form-group{ margin-bottom: 1rem; }
 .form-group label{ display: block;margin-bottom: 0.5rem; }
-.form-group input,.form-group textarea,.form-group select{ width: 100%;padding: 0.5rem;border: 1px solid #ccc;border-radius: 0.25rem;transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
-.form-group input:focus,.form-group textarea:focus,.form-group select:focus{ outline: 0;border-color: 0px;box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
-.form-group input:disabled,.form-group textarea:disabled,.form-group select:disabled{ background-color: #e9ecef; }
-.form-group input::placeholder,.form-group textarea::placeholder,.form-group select::placeholder{ color: #ccc; }
-.form-group input:read-only,.form-group textarea:read-only,.form-group select:read-only{ background-color: #e9ecef; }
-.form-group input .form-checkbox,.form-group textarea .form-checkbox,.form-group select .form-checkbox{ margin-right: 0.5rem; }
+.form-group input,.form-group textarea,.form-group select,.form-group .form-control{ width: 100%;padding: 0.5rem;border: 1px solid #ccc;border-radius: 0.25rem;transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus,.form-group .form-control:focus{ outline: 0;border-color: 0px;box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
+.form-group input:disabled,.form-group textarea:disabled,.form-group select:disabled,.form-group .form-control:disabled{ background-color: #e9ecef; }
+.form-group input::placeholder,.form-group textarea::placeholder,.form-group select::placeholder,.form-group .form-control::placeholder{ color: #ccc; }
+.form-group input:read-only,.form-group textarea:read-only,.form-group select:read-only,.form-group .form-control:read-only{ background-color: #e9ecef; }
+.form-group input .form-checkbox,.form-group textarea .form-checkbox,.form-group select .form-checkbox,.form-group .form-control .form-checkbox{ margin-right: 0.5rem; }
 .form-group .form-invalid:invalid{ border-color: #dc3545; }
 .form-group .form-valid:valid{ border-color: #28a745; }
 .p-0{ padding: 0; }
