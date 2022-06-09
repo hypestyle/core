@@ -14,10 +14,8 @@ const config = {
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
 
-    // GitHub pages deployment config.
-    // If you aren't using GitHub pages, you don't need these.
-    organizationName: 'hypestyle', // Usually your GitHub org/user name.
-    projectName: 'hypestyle', // Usually your repo name.
+    organizationName: 'hypestyle',
+    projectName: 'hypestyle',
 
     i18n: {
         defaultLocale: 'en',
