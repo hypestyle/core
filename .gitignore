@@ -2,3 +2,4 @@ node_modules
 .netlify
 netlify
 ./docs/Untitled-1.md
+package-lock.json
