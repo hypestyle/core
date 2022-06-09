@@ -62,7 +62,3 @@ Here is a simple example of how to start using HypeStyle CSS.
     </body>
 </html>
 ```
-
-
-
-
