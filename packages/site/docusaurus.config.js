@@ -60,6 +60,15 @@ const config = {
 
             //  },
 
+            announcementBar: {
+                id: 'support_ukraine',
+                content:
+                  '<a target="_blank" rel="noopener noreferrer" href="https://war.ukraine.ua/support-ukraine/">We stand with Ukraine 🇺🇦</a>',
+                backgroundColor: '#fff',
+                textColor: '#101010',
+                isCloseable: false,
+              },
+
             navbar: {
                 title: 'Hypestyle',
                 logo: {
@@ -79,6 +88,28 @@ const config = {
                         label: 'GitHub',
                         position: 'right',
                     },
+
+                    // create a dropdown menu
+                    {
+                        to: '/docs/getting-started',
+                        label: '❤️ Support',
+                        position: 'right',
+                        items: [
+                            {
+                                label: '💰 Donate',
+                                to: '/donate',
+                                external: true,
+                            },
+
+                            {
+                                label: '🇺🇦 Ukraine',
+                                to: 'https://war.ukraine.ua/',
+                                external: true,
+
+                            }
+                        ],
+                    },
+
                 ],
             },
             footer: {
@@ -131,9 +162,35 @@ const config = {
                 darkTheme: darkCodeTheme,
             },
 
+            i18n: {
+                locales: [
+                    {
+                        code: 'en',
+                        iso: 'en-US',
+                        name: 'English',
+                        default: true,
+                    },
+                ],
+
+                defaultLocale: 'en',
+
+                localeConfigs: {
+                    en: {
+                        language: 'English',
+                        locale: 'en-US',
+                        antd: true,
+                        dateFormat: 'MMMM DD, YYYY',
+
+                    }
+                    
+                }
+            },
+
             // Search config.
             // @ts-ignore
         }),
+
+     
 }
 
 module.exports = config
