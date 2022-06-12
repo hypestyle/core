@@ -44,7 +44,10 @@ process.argv.forEach((arg) => {
  - Licensed under MIT (https://github.com/hypestyle/hypestyle/blob/master/LICENSE)
 */`;
         const css = Object.keys(colors)
-          .map((key) => `.text-${key} { color: ${colors[key]} !important; }`)
+          .map(
+            (key) =>
+              `.text-${key} { color: ${colors[key]} !important; }\n.bg-${key} { background-color: ${colors[key]} !important; }`
+          )
           .join("\n");
 
         if (outDir) {

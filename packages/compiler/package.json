@@ -1,6 +1,6 @@
 {
   "name": "hypestyle-compiler",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Hypestyle css compiler (beta not ready yet)",
   "tpype": "module",
   "bin": {
