@@ -3,3 +3,5 @@ node_modules
 netlify
 ./docs/Untitled-1.md
 package-lock.json
+.vscode
+package-lock.json
