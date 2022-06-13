@@ -1,10 +1,12 @@
 lockfileVersion: 5.4
 
 specifiers:
+  ascii-table: ^0.0.9
   chalk: 4.1.2
   cli-spinner: ^0.2.10
 
 dependencies:
+  ascii-table: 0.0.9
   chalk: 4.1.2
   cli-spinner: 0.2.10
 
@@ -15,6 +17,10 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       color-convert: 2.0.1
+    dev: false
+
+  /ascii-table/0.0.9:
+    resolution: {integrity: sha512-xpkr6sCDIYTPqzvjG8M3ncw1YOTaloWZOyrUmicoEifBEKzQzt+ooUpRpQ/AbOoJfO/p2ZKiyp79qHThzJDulQ==}
     dev: false
 
   /chalk/4.1.2:
