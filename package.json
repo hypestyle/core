@@ -23,6 +23,7 @@
     "scripts": {
         "dev:gulp": "gulp",
         "dev:website": "npx docsify-cli serve docs --port=3000",
+        "dev:hypestyle": "hypestyle --run",
         "dev:deploy": "netlify deploy --prod",
         "dev": "concurrently --kill-others \"pnpm run dev:gulp\" \"pnpm run dev:website\""
     },
