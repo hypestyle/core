@@ -1,11 +1,11 @@
 const { src, dest, watch, series } = require('gulp')
 const sass = require('gulp-sass')(require('sass'))
-cssFormat = require('gulp-css-format')
+const cssMinify = require('gulp-css-minify')
 
 function buildStyles() {
     return src('src/**/*.scss')
         .pipe(sass())
-        .pipe(cssFormat({ indent: 1, hasSpace: true }))
+        .pipe(cssMinify())
         .pipe(dest('dist/css'))
 }
 

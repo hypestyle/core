@@ -8,6 +8,7 @@ specifiers:
   graceful-fs: ^4.2.8
   gulp: ^4.0.2
   gulp-css-format: ^0.1.2
+  gulp-css-minify: ^0.9.2
   gulp-sass: ^5.0.0
   lodash: 4.17.21
   lodash.template: 4.5.0
@@ -20,6 +21,7 @@ dependencies:
   glob-parent: 5.1.2
   graceful-fs: 4.2.10
   gulp: 4.0.2
+  gulp-css-minify: 0.9.2
   gulp-sass: 5.1.0
   lodash: 4.17.21
   lodash.template: 4.5.0
@@ -1481,6 +1483,12 @@ packages:
       through2: 2.0.5
     dev: true
 
+  /gulp-css-minify/0.9.2:
+    resolution: {integrity: sha512-AuNirCdxeGg/V1TDKykUzzmLjj+DmBRuhi4fjybXI71nvLKHKSJnQB6qDL6sWnFtWU1UaEVsuaOG08tKDqemqg==}
+    dependencies:
+      through2: 4.0.2
+    dev: false
+
   /gulp-sass/5.1.0:
     resolution: {integrity: sha512-7VT0uaF+VZCmkNBglfe1b34bxn/AfcssquLKVDYnCDJ3xNBaW7cUuI3p3BQmoKcoKFrs9jdzUxyb+u+NGfL4OQ==}
     engines: {node: '>=12'}
@@ -2580,6 +2588,15 @@ packages:
       string_decoder: 1.1.1
       util-deprecate: 1.0.2
 
+  /readable-stream/3.6.0:
+    resolution: {integrity: sha512-BViHy7LKeTz4oNnkcLJ+lVSL6vpiFeX6/d3oSH8zCW7UxP2onchk+vTGB143xuFjHS3deTgkKoXXymXqymiIdA==}
+    engines: {node: '>= 6'}
+    dependencies:
+      inherits: 2.0.4
+      string_decoder: 1.1.1
+      util-deprecate: 1.0.2
+    dev: false
+
   /readdirp/2.2.1:
     resolution: {integrity: sha512-1JU/8q+VgFZyxwrJ+SVIOsh+KywWGpds3NTqikiKpDMZWScmAYyKIgqkO+ARvNWJfXeXR1zxz7aHF4u4CyH6vQ==}
     engines: {node: '>=0.10'}
@@ -2944,7 +2961,7 @@ packages:
     dev: true
 
   /string_decoder/0.10.31:
-    resolution: {integrity: sha1-YuIDvEF2bGwoyfyEMB2rHFMQ+pQ=}
+    resolution: {integrity: sha512-ev2QzSzWPYmy9GuqfIVildA4OdcGLeFZQrq5ys6RtiuF+RQQiZWr8TZNyAcuVXyQRYfEO+MsoB/1BuQVhOJuoQ==}
     dev: true
 
   /string_decoder/1.1.1:
@@ -3037,6 +3054,12 @@ packages:
     dependencies:
       readable-stream: 2.3.7
       xtend: 4.0.2
+
+  /through2/4.0.2:
+    resolution: {integrity: sha512-iOqSav00cVxEEICeD7TjLB1sueEL+81Wpzp2bY17uZjZN0pWZPuo4suZ/61VujxmqSGFfgOcNuTZ85QJwNZQpw==}
+    dependencies:
+      readable-stream: 3.6.0
+    dev: false
 
   /time-stamp/1.1.0:
     resolution: {integrity: sha1-dkpaEa9QVhkhsTPztE5hhofg9cM=}
@@ -3193,7 +3216,7 @@ packages:
     dev: false
 
   /util-deprecate/1.0.2:
-    resolution: {integrity: sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=}
+    resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
   /v8-compile-cache/2.3.0:
     resolution: {integrity: sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==}
