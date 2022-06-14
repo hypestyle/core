@@ -1,5 +1,3 @@
-#### Components
-
 # Form
 
 Read about how to use the Form classes to your forms.

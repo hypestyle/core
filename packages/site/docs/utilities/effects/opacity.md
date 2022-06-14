@@ -1,5 +1,3 @@
-#### Effects & Shadows
-
 # Opacity
 
 Read about how you can use **Opacity** to make your content appear or disappear.

@@ -29,6 +29,7 @@ const config = {
             ({
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
+                    sidebarCollapsed: false,
                     // Please change this to your repo.
                     // Remove this to remove the "edit this page" links.
                     editUrl:
@@ -63,11 +64,11 @@ const config = {
             announcementBar: {
                 id: 'support_ukraine',
                 content:
-                  '<a target="_blank" rel="noopener noreferrer" href="https://war.ukraine.ua/support-ukraine/">We stand with Ukraine 🇺🇦</a>',
+                    '<a target="_blank" rel="noopener noreferrer" href="https://war.ukraine.ua/support-ukraine/">We stand with Ukraine 🇺🇦</a>',
                 backgroundColor: '#fff',
                 textColor: '#101010',
                 isCloseable: false,
-              },
+            },
 
             navbar: {
                 title: 'Hypestyle',
@@ -96,20 +97,18 @@ const config = {
                         position: 'right',
                         items: [
                             {
-                                label: '💰 Donate',
-                                to: '/donate',
+                                label: '⭐ Give us a star',
+                                to: 'https://github.com/hypestyle/hypestyle',
                                 external: true,
                             },
 
                             {
-                                label: '🇺🇦 Ukraine',
+                                label: '❤️ Support Ukraine',
                                 to: 'https://war.ukraine.ua/',
                                 external: true,
-
-                            }
+                            },
                         ],
                     },
-
                 ],
             },
             footer: {
@@ -180,17 +179,13 @@ const config = {
                         locale: 'en-US',
                         antd: true,
                         dateFormat: 'MMMM DD, YYYY',
-
-                    }
-                    
-                }
+                    },
+                },
             },
 
             // Search config.
             // @ts-ignore
         }),
-
-     
 }
 
 module.exports = config

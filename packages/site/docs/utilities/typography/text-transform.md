@@ -1,5 +1,3 @@
-#### Typography
-
 # Text Transform
 
 Read about how you can use text transform for your elements.

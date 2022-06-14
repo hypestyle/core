@@ -1,5 +1,3 @@
-#### Components
-
 # Navbar
 
 We all need a navigation bar to our website. So hypestyle created that! But not a full navigation bar. More simple to make it eassy to create.

@@ -1,5 +1,3 @@
-#### Typography
-
 # Font Family
 
 Read about how you can change the font family of your elements.
@@ -21,7 +19,7 @@ Read about how you can change the font family of your elements.
 <p class="ff-serif">ff-serif</p>
 <p class="ff-system-ui">ff-system-ui</p>
 <p class="ff-initial">ff-initial</p>
-<p class="ff-inherit">ff-inherit</p>   
+<p class="ff-inherit">ff-inherit</p>
 <p class="ff-revert">ff-revert</p>
 
 ```html

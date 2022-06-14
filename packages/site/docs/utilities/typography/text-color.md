@@ -1,5 +1,3 @@
-#### Typography
-
 # Text Color
 
 Read about how you can use colors in your elements.

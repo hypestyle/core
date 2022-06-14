@@ -1,5 +1,3 @@
-#### Typography
-
 # Text Decoration
 
 Read about how you can use text decoration for your elements.

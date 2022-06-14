@@ -1,5 +1,3 @@
-#### Typography
-
 # Font Size
 
 Read about how you can add font sizes to your elements
@@ -14,7 +12,7 @@ Read about how you can add font sizes to your elements
 
 ### Basic Usage
 
-<p class="font-sm">Font-sm</p> 
+<p class="font-sm">Font-sm</p>
 <p class="font-md">Font-md</p>
 <p class="font-lg">Font-lg</p>
 <p class="font-xl">Font-xl</p>

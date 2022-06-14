@@ -1,20 +1,16 @@
 module.exports = {
-    // The output directory for your compiled config file.
     outDir: './src/css',
 
-    // Customize colors
     colors: {
-        primary: '#0070f3',
+        primary: '#326dee ',
+        secondary: '#1ac886',
+        error: '#d32752',
+        info: '#f6c31c ',
+        teal: '#20c997 ',
     },
 
-    // Customize utilities classes
     utils: {
-        margin: {
-            1: '0.25rem',
-        },
-
-        padding: {
-            1: '0.25rem',
-        },
+        margin: {},
+        padding: {},
     },
 }

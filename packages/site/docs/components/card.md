@@ -1,5 +1,3 @@
-#### Components
-
 # Cards
 
 Read about how you can use a the card component.

@@ -1,5 +1,3 @@
-#### Sizing
-
 # Width
 
 Read about how you can use **width** to your elements.
