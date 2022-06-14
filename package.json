@@ -8,6 +8,7 @@
     "author": "Lasse <vestergaardlasse2@gmail.com>",
     "license": "MIT",
     "dependencies": {
+        "css-minify": "^2.0.0",
         "glob-parent": "5.1.2",
         "graceful-fs": "^4.2.8",
         "gulp": "^4.0.2",

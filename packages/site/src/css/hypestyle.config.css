@@ -1,0 +1,9 @@
+/*
+ - HypeStyle CSS v0.1.9 (https://hypestyle.netlify.app)
+ - Copyright 2022 Hypll Development. / HypeStyle LABS
+ - Licensed under MIT (https://github.com/hypestyle/hypestyle/blob/master/LICENSE)
+*/
+.text-primary { color: #0070f3 !important; }
+.bg-primary { background-color: #0070f3 !important; }
+.m-1 { margin: 0.25rem !important; }
+.p-1 { padding: 0.25rem !important; }

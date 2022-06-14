@@ -1,20 +1,3 @@
----
-sidebar_position: 2
-title: Forms
----
-
-<head>
-  <html className="some-extra-html-class" />
-  <body className="other-extra-body-class" />
-  <meta charSet="utf-8" />
-  <meta name="twitter:card" content="summary" />
-  <link rel="stylesheet" href="https://docusaurus.io/docs/markdown-features/head-metadata" />
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/hypestyle@0.1.9/dist/css/hypestyle.min.css"
-  />
-</head>
-
 #### Components
 
 # Form

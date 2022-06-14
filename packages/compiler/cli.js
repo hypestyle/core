@@ -4,6 +4,7 @@ const path = require('path')
 const chalk = require('chalk')
 const Spinner = require('cli-spinner').Spinner
 const AsciiTable = require('ascii-table')
+const cssMinify = require('css-minify')
 
 process.argv.forEach((arg) => {
     if (arg === '--init') {
