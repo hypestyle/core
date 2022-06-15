@@ -1,6 +1,6 @@
 {
     "name": "hypestyle-compiler",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "Compiler for hypestyle css utility classes!",
     "bin": {
         "hypestyle": "./cli.js"
@@ -15,6 +15,7 @@
     "dependencies": {
         "ascii-table": "^0.0.9",
         "chalk": "4.1.2",
+        "chokidar": "^3.5.3",
         "cli-spinner": "^0.2.10"
     }
 }

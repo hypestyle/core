@@ -4,7 +4,7 @@ const path = require('path')
 const chalk = require('chalk')
 const Spinner = require('cli-spinner').Spinner
 const AsciiTable = require('ascii-table')
-const cssMinify = require('css-minify')
+const chokidar = require('chokidar')
 
 process.argv.forEach((arg) => {
     if (arg === '--init') {
@@ -13,6 +13,8 @@ process.argv.forEach((arg) => {
         const config = `module.exports = {
        // The output directory for your compiled config file.
         outDir: "",
+        // The name of your output css file
+        fileName: "hypestyle.config.css", // default: hypestyle.config.css
 
 
         // Customize colors
@@ -23,12 +25,21 @@ process.argv.forEach((arg) => {
         // Customize utilities classes
         utils: {
             margin: {
-                1: "0.25rem",
+                1: "0.75rem",
+                // You can also give custom names like: custom: "0.75rem"
             },
-
+            marginBottom: {},
+            marginTop: {},
             padding: {
-                1: "0.25rem",
+                1: "0.75rem",
+                // You can also give custom names like: custom: "0.75rem"
             },
+            paddingBottom: {},
+            paddingTop: {},
+            fontFamily: {
+                sans: "\"Helvetica Neue\", Helvetica, Arial, sans-serif",
+            }
+
         }
       };
       `
@@ -42,16 +53,25 @@ process.argv.forEach((arg) => {
         const configFile = path.join(process.cwd(), 'hypestyle.config.js')
 
         if (!fs.existsSync(configFile)) {
-            console.log(chalk.red('⛔ | No config file found!'))
+            console.log(chalk.red(' | No config file found!'))
             process.exit(1)
         }
 
         const colors = require(configFile).colors
         const outDir = require(configFile).outDir
+        const fileName = require(configFile).fileName
         const utilsMargin = require(configFile).utils.margin
         const utilsPadding = require(configFile).utils.padding
+        const utilsPaddingBottom = require(configFile).utils.paddingBottom
+        const utilsPaddingTop = require(configFile).utils.paddingTop
+        const utilsMarginBottom = require(configFile).utils.marginBottom
+        const utilsMarginTop = require(configFile).utils.marginTop
+        const utilsFontFamily = require(configFile).utils.fontFamily
 
-        const cssFile = path.join(process.cwd(), 'hypestyle.config.css')
+        const cssFile = path.join(
+            process.cwd(),
+            fileName || 'hypestyle.config.css'
+        )
 
         const spinner = new Spinner('🔃 | Generating CSS...')
         spinner.start()
@@ -91,13 +111,55 @@ process.argv.forEach((arg) => {
                     )
                     .join('\n')
 
+                // The padding bottom compiler
+                const paddingBottom = Object.keys(utilsPaddingBottom)
+                    .map(
+                        (key) =>
+                            `.pb-${key} { padding-bottom: ${utilsPaddingBottom[key]} !important; }`
+                    )
+                    .join('\n')
+
+                // The padding top compiler
+                const paddingTop = Object.keys(utilsPaddingTop)
+                    .map(
+                        (key) =>
+                            `.pt-${key} { padding-top: ${utilsPaddingTop[key]} !important; }`
+                    )
+                    .join('\n')
+
+                // The marginTop top compiler
+                const marginTop = Object.keys(utilsMarginTop)
+                    .map(
+                        (key) =>
+                            `.mb-${key} { padding-top: ${utilsMarginTop[key]} !important; }`
+                    )
+                    .join('\n')
+
+                // The marginBottom bottom compiler
+                const marginBottom = Object.keys(utilsMarginBottom)
+                    .map(
+                        (key) =>
+                            `.mt-${key} { padding-bottom: ${utilsMarginBottom[key]} !important; }`
+                    )
+                    .join('\n')
+
+                // The fontFamily compiler
+                const fontFamily = Object.keys(utilsFontFamily)
+                    .map(
+                        (key) =>
+                            `.ff-${key} { font-family: ${utilsFontFamily[key]} !important; }`
+                    )
+                    .join('\n')
+
+                // The margin bottom compiler
+
                 // The final CSS
-                const css = `${fileComment}\n${color}\n${margin}\n${padding}`
+                const css = `${fileComment}\n${color}\n${margin}\n${padding}\n${fontFamily}\n${paddingBottom}\n${paddingTop}\n${marginTop}\n${marginBottom}`
 
                 // Write the CSS file
                 if (outDir) {
                     fs.writeFileSync(
-                        path.join(outDir, 'hypestyle.config.css'),
+                        path.join(outDir, filename || 'hypestyle.config.css'),
                         css
                     )
                 } else {
@@ -112,7 +174,7 @@ process.argv.forEach((arg) => {
                         chalk.blackBright(`${Date.now() - startTime}ms`)
                 )
             } catch (error) {
-                console.log(chalk.red('\n\n⛔ | Error: ' + error.message))
+                console.log(chalk.red('\n\n | Error: ' + error.message))
                 process.exit(1)
             }
         }, 600)
@@ -136,15 +198,90 @@ process.argv.forEach((arg) => {
 
         console.log(table.toString())
     } else if (arg === '--watch') {
-        const spinner = new Spinner('🌿 Watching for changes...')
-        spinner.start()
+        console.log(chalk.hex('#f368e0')('Watching for changes...'))
 
-        setTimeout(() => {
-            console.log(
-                chalk.redBright("\n\nThis command isn't supported yet!")
-            )
+        chokidar
+            .watch(path.join(process.cwd(), 'hypestyle.config.js'), {
+                ignored: /(^|[\/\\])\../,
+                persistent: true,
+                ignoreInitial: true,
+            })
+            .on('change', () => {
+                console.log(
+                    chalk.greenBright('\n\nConfig file changed, recompiling...')
+                )
 
-            spinner.stop(true)
-        }, 2000)
+                // update the css file
+                const configFile = path.join(
+                    process.cwd(),
+                    'hypestyle.config.js'
+                )
+
+                const colors = require(configFile).colors
+                const outDir = require(configFile).outDir
+                const utilsMargin = require(configFile).utils.margin
+                const utilsPadding = require(configFile).utils.padding
+
+                const cssFile = path.join(process.cwd(), 'hypestyle.config.css')
+
+                const spinner = new Spinner('🔃 | Generating CSS...')
+                spinner.start()
+
+                const startTime = Date.now()
+
+                setTimeout(() => {
+                    try {
+                        const fileComment = `/*
+     - HypeStyle CSS v0.1.9 (https://hypestyle.netlify.app)
+     - Copyright 2022 Hypll Development. / HypeStyle LABS
+     - Licensed under MIT (https://github.com/hypestyle/hypestyle/blob/master/LICENSE)
+    */`
+
+                        // The color compiler
+                        const color = Object.keys(colors)
+                            .map(
+                                (key) =>
+                                    `.text-${key} { color: ${colors[key]} !important; }\n.bg-${key} { background-color: ${colors[key]} !important; }`
+                            )
+                            .join('\n')
+
+                        // The margin compiler
+                        const margin = Object.keys(utilsMargin)
+
+                            .map(
+                                (key) =>
+                                    `.m-${key} { margin: ${utilsMargin[key]} !important; }`
+                            )
+                            .join('\n')
+
+                        // The padding compiler
+                        const padding = Object.keys(utilsPadding)
+
+                            .map(
+                                (key) =>
+                                    `.p-${key} { padding: ${utilsPadding[key]} !important; }`
+                            )
+                            .join('\n')
+
+                        // The final CSS
+                        const css = `${fileComment}\n${color}\n${margin}\n${padding}`
+
+                        // Write the CSS file
+                        if (outDir) {
+                            fs.writeFileSync(
+                                path.join(outDir, 'hypestyle.config.css'),
+                                css
+                            )
+                        } else {
+                            fs.writeFileSync(cssFile, css)
+                        }
+
+                        spinner.stop(true)
+                    } catch (error) {
+                        console.log(chalk.red('\n\n | Error: ' + error.message))
+                        process.exit(1)
+                    }
+                }, 600)
+            })
     }
 })
