@@ -7,6 +7,7 @@ const AsciiTable = require('ascii-table')
 const chokidar = require('chokidar')
 const id = require('yourid')
 const fetch = require('node-fetch')
+const cssmin = require('cssmin')
 
 process.argv.forEach((arg) => {
     if (arg === '--init') {
@@ -161,11 +162,13 @@ process.argv.forEach((arg) => {
                 // The final CSS
                 const css = `${fileComment}${color}${margin}${padding}${fontFamily}${paddingBottom}${paddingTop}${marginTop}${marginBottom}`
 
+                const cssMinify = fileComment + cssmin(css)
+
                 // Write the CSS file
                 if (outDir) {
                     fs.writeFileSync(path.join(outDir, cssFile), css)
                 } else {
-                    fs.writeFileSync(cssFile, css)
+                    fs.writeFileSync(cssFile, cssMinify)
                 }
 
                 spinner.stop(true)

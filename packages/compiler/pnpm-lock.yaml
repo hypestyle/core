@@ -5,6 +5,7 @@ specifiers:
   chalk: 4.1.2
   chokidar: ^3.5.3
   cli-spinner: ^0.2.10
+  cssmin: ^0.4.3
   node-fetch: '2'
   yourid: ^1.4.2
 
@@ -13,6 +14,7 @@ dependencies:
   chalk: 4.1.2
   chokidar: 3.5.3
   cli-spinner: 0.2.10
+  cssmin: 0.4.3
   node-fetch: 2.6.7
   yourid: 1.4.2
 
@@ -86,6 +88,11 @@ packages:
 
   /color-name/1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
+    dev: false
+
+  /cssmin/0.4.3:
+    resolution: {integrity: sha512-A0hOtBUV5dPB/gRKsLZsqoyeFHuKIWCXdumFdsK/0nlhwK1NRZHwtm0svdTA4uEpixZD+o0xs7MirNsG2X1JBg==}
+    hasBin: true
     dev: false
 
   /fill-range/7.0.1:
