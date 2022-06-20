@@ -1,9 +1,55 @@
-# Hypestyle CLI
+## Hypestyle CLI
 
-This is a **CLI** to generate a **Hypestyle** project.
+Hypestyle is used to create a new hypestyle application fast! + its used to people who want to customize hypestyle with hypestyles config file.
 
-To get started, run `npx hypestyle-cli@latest` to create a new project.
+## Installation
 
-You can read the documentation for the CLI at [https://hypestyle.netlify.app/#/guide/cli/installation](https://hypestyle.netlify.app/#/guide/cli/installation).
+```bash
+ $ npm install -g hypestyle
+```
 
-[![NPM](https://nodei.co/npm/hypestyle-cli.png)](https://nodei.co/npm/hypestyle-cli/)
+```bash
+ $ pnpm (yarn) add -g hypestyle
+```
+
+## Usage
+
+<b>Init</b>
+
+Command used to create new config file
+
+```bash
+$ hypestyle init
+```
+
+<b>Build</b>
+
+Command used to build your <code>hypestyle.config.js</code> file.
+
+```bash
+$ hypestyle build
+```
+
+<b>Create App</b>
+
+Command used to create new application for hypestyle. You only have to follow the instructions, when you run the command.
+
+```bash
+$ hypestyle create-app
+```
+
+<b>Version</b>
+
+Command used to show the version of your hypestyle-cli
+
+```bash
+$ hypestyle version
+```
+
+<b>Help</b>
+
+Command used to show help.
+
+```bash
+$ hypestyle help
+```
