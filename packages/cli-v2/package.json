@@ -16,6 +16,7 @@
         "chokidar": "^3.5.3",
         "cli-spinner": "^0.2.10",
         "cssmin": "^0.4.3",
+        "inquirer": "8.2.0",
         "node-fetch": "2",
         "yourid": "^1.4.2"
     },

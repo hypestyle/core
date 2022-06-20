@@ -11,5 +11,7 @@ process.argv.forEach((cmd) => {
         require('./commands/version')
     } else if (cmd == '--watch') {
         require('./commands/watch')
+    } else if (cmd == 'create-app') {
+        require('./commands/create-app')
     }
 })
