@@ -10,22 +10,25 @@ module.exports = {
         // Customize your colors
         colors: {
             primary: '#00bcd4', // primary color example
+            orange: '#ff9800', // orange color example
         },
 
         // Customize utility classes
         utils: {
             margin: {
-                top: '0px',
+                top: {},
+                bottom: {},
+                right: {},
+                left: {},
             },
-            marginBottom: {
-                bottom: '0px',
+
+            padding: {
+                top: {},
+                bottom: {},
+                right: {},
+                left: {},
             },
-            marginTop: {
-                top: '0px',
-            },
-            padding: {},
-            paddingBottom: {},
-            paddingTop: {},
+
             fontFamily: {},
         },
     },

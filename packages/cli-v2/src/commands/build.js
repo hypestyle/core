@@ -30,15 +30,46 @@ function build() {
     try {
         let createColor = Object.keys(config.configs.colors)
             .map((color) => {
-                return `.text-${color} { color: ${config.configs.colors[color]}; }
-           \n.bg-${color} { background-color: ${config.configs.colors[color]}; }\n`
+                return `.text-${color} { color: ${config.configs.colors[color]} !important; }
+           \n.bg-${color} { background-color: ${config.configs.colors[color]} !important; }\n`
+            })
+            .join('')
+
+        let { margin, padding } = config.configs.utils
+
+        let createUtilsMargin = Object.keys(margin)
+            .map((key) => {
+                return Object.keys(margin[key])
+
+                    .map((subKey) => {
+                        return `.m-${subKey} { margin-${key}: ${margin[key][subKey]} !important; }\n`
+                    })
+                    .join('')
+            })
+            .join('')
+
+        let createUtilsPadding = Object.keys(padding)
+            .map((key) => {
+                return Object.keys(padding[key])
+
+                    .map((subKey) => {
+                        return `.p-${subKey} { padding-${key}: ${padding[key][subKey]} !important; }\n`
+                    })
+                    .join('')
             })
             .join('')
 
         let finalCSS =
-            fs.readFileSync(fileComment, 'utf8') + cssmin(`${createColor}`)
+            fs.readFileSync(fileComment, 'utf-8') +
+            cssmin(`${createColor}${createUtilsMargin}${createUtilsPadding}`)
 
-        fs.writeSync(path.join(settings.outDir, settings.outFile), finalCSS)
+        fs.writeFileSync(
+            path.join(
+                config.settings.outDir || './',
+                config.settings.outFile || 'hypestyle.config.css'
+            ),
+            finalCSS
+        )
 
         spinner.stop(true)
         console.log(
