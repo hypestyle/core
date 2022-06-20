@@ -161,27 +161,12 @@ const config = {
                 darkTheme: darkCodeTheme,
             },
 
-            i18n: {
-                locales: [
-                    {
-                        code: 'en',
-                        iso: 'en-US',
-                        name: 'English',
-                        default: true,
-                    },
-                ],
-
-                defaultLocale: 'en',
-
-                localeConfigs: {
-                    en: {
-                        language: 'English',
-                        locale: 'en-US',
-                        antd: true,
-                        dateFormat: 'MMMM DD, YYYY',
-                    },
-                },
-            },
+            // algolia: {
+            //     appId: '',
+            //     apiKey: '',
+            //     indexName: 'hypestyle',
+            //     contextualSearch: true,
+            // },
 
             // Search config.
             // @ts-ignore

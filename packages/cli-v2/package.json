@@ -1,0 +1,15 @@
+{
+    "name": "hypestyle-cli",
+    "version": "1.0.0",
+    "description": "CLI tool for Hypestyle CSS",
+    "main": "src/index.js",
+    "bin": {
+        "hypestyle": "src/index.js"
+    },
+    "scripts": {
+        "cli": "node src/index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
