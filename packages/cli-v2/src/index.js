@@ -9,5 +9,7 @@ process.argv.forEach((cmd) => {
         require('./commands/build')
     } else if (cmd == 'version') {
         require('./commands/version')
+    } else if (cmd == '--watch') {
+        require('./commands/watch')
     }
 })
