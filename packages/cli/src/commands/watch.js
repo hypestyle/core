@@ -19,7 +19,7 @@ watcher.on('change', (file) => {
     )
 
     // run a npm script
-    require('child_process').execSync(`pnpm cli build --watch`, {
+    require('child_process').execSync(`hypestyle build --watch`, {
         stdio: 'inherit',
     })
 })
