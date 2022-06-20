@@ -59,9 +59,17 @@ function build() {
             })
             .join('')
 
+        let createUtilsFontFamily = Object.keys(config.configs.utils.fontFamily)
+            .map((key) => {
+                return `.ff-${key} { font-family: ${config.configs.utils.fontFamily[key]} !important; }\n`
+            })
+            .join('')
+
         let finalCSS =
             fs.readFileSync(fileComment, 'utf-8') +
-            cssmin(`${createColor}${createUtilsMargin}${createUtilsPadding}`)
+            cssmin(
+                `${createColor}${createUtilsMargin}${createUtilsPadding}${createUtilsFontFamily}`
+            )
 
         fs.writeFileSync(
             path.join(

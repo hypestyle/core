@@ -7,5 +7,7 @@ process.argv.forEach((cmd) => {
         require('./commands/init')
     } else if (cmd == 'build') {
         require('./commands/build')
+    } else if (cmd == 'version') {
+        require('./commands/version')
     }
 })

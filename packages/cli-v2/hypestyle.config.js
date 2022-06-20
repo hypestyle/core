@@ -29,7 +29,9 @@ module.exports = {
                 left: {},
             },
 
-            fontFamily: {},
+            fontFamily: {
+                example: '"Roboto", sans-serif',
+            },
         },
     },
 }
