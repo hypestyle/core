@@ -1,6 +1,6 @@
 {
     "name": "hypestyle-cli",
-    "version": "4.2.2",
+    "version": "4.2.6",
     "description": "CLI tool for Hypestyle CSS",
     "main": "src/index.js",
     "bin": {

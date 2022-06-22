@@ -11,6 +11,10 @@ module.exports = {
         colors: {
             primary: '#00bcd4', // primary color example
             orange: '#ff9800', // orange color example
+            red: '#f44336', // red color example
+            green: '#4caf50', // green color example
+            blue: '#2196f3', // blue color example
+            purple: '#9c27b0', // purple color example
         },
 
         // Customize utility classes

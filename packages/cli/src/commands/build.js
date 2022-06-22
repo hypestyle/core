@@ -85,7 +85,7 @@ function build() {
         )
         console.log(
             chalk.cyanBright('⏰ | Done in: ') +
-                chalk.blackBright(`${Date.now() - time}ms`)
+                chalk.gray(`${Date.now() - time}ms`)
         )
     } catch (e) {
         console.log(chalk.redBright(`Error: ${chalk.gray(e.message)}`))

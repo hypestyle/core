@@ -13,9 +13,9 @@ const watcher = chokidar.watch(configFile, {
 
 watcher.on('change', (file) => {
     console.log(
-        chalk
-            .hex('#e55d3b')
-            .bold(`📦 | File ${file} has been changed, rebuilding...`)
+        chalk.hex('#e55d3b')(
+            `📦 | File ${file} has been changed, rebuilding...`
+        )
     )
 
     // run a npm script
