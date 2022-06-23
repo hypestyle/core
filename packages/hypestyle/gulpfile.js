@@ -6,7 +6,7 @@ function buildStyles() {
     return src('src/**/*.scss')
         .pipe(sass())
         .pipe(cssMinify())
-        .pipe(dest('dist/css'))
+        .pipe(dest('../../dist/css'))
 }
 
 function watchTask() {
