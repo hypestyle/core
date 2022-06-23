@@ -5,3 +5,4 @@ netlify
 package-lock.json
 .vscode
 package-lock.json
+pnpm-lock.yaml
