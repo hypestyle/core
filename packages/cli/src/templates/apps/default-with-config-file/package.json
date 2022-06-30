@@ -1,9 +1,0 @@
-{
-    "name": "hypestyle-simple",
-    "version": "1.0.0",
-    "description": "This was made by @hypestyle-cli",
-    "scripts": {
-        "dev": "npx live-server --port=8080",
-        "build": "npx hypestyle-cli build --watch"
-    }
-}
