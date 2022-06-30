@@ -2,7 +2,7 @@ module.exports = {
     // Basic settings
     settings: {
         files: ['.html'], // the files hypestyle cli is building
-        outDir: './css', // the output directory, you can leave it emty
+        outDir: './src', // the output directory, you can leave it emty
         outFile: 'hypestyle.config.css', // the output file name, default is hypestyle.config.css
     },
 

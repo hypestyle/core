@@ -1,5 +1,5 @@
 {
-    "name": "hypestyle",
+    "name": "@hypestyle/css",
     "description": "Small, useful CSS library build on utility classes & components.",
     "version": "0.1.9",
     "main": "gulpfile.js",
