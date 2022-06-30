@@ -3,6 +3,7 @@ import clsx from 'clsx'
 import Link from '@docusaurus/Link'
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import Layout from '@theme/Layout'
+import Head from '@docusaurus/Head'
 import HomepageFeatures from '@site/src/components/HomepageFeatures'
 import 'hypestyle/dist/css/hypestyle.min.css'
 import '../css/hypestyle.config.css'
@@ -35,6 +36,10 @@ export default function Home() {
             title={`${siteConfig.title}`}
             description="Description will go into a meta tag in <head />"
         >
+            <Head>
+                <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+            </Head>
+
             <HomepageHeader />
             <main>
                 <HomepageFeatures />

@@ -51,14 +51,13 @@ const config = {
     themeConfig:
         /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
-            //algolia: {
-            //  apiKey: '',
-            //   indexName: '',
-            //  contextualSearch: true,
-            //   placeholder: 'Search in the docs...',
-            //   appId: ""
-
-            //  },
+            algolia: {
+                apiKey: '679441a9a78880a66a5f57d9ded2d270',
+                indexName: 'hypestylecss',
+                contextualSearch: true,
+                placeholder: 'Search in the docs...',
+                appId: 'TCHQIC2XOG',
+            },
 
             announcementBar: {
                 id: 'support_ukraine',
