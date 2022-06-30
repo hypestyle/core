@@ -1,0 +1,33 @@
+{
+    "name": "hypestyle",
+    "description": "Small, useful CSS library build on utility classes & components.",
+    "version": "0.1.9",
+    "main": "gulpfile.js",
+    "repository": "https://github.com/hypestyle/HypeStyle.git",
+    "homepage": "https://hypestyle.netlify.app/",
+    "author": "Lasse <vestergaardlasse2@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "css-minify": "^2.0.0",
+        "glob-parent": "5.1.2",
+        "graceful-fs": "^4.2.8",
+        "gulp": "^4.0.2",
+        "gulp-css-minify": "^0.9.2",
+        "gulp-sass": "^5.0.0",
+        "lodash": "4.17.21",
+        "lodash.template": "4.5.0",
+        "minimatch": "3.0.2",
+        "sass": "^1.43.4",
+        "stylelint-config-standard": "^24.0.0",
+        "vuepress-theme-default-prefers-color-scheme": "^2.0.0"
+    },
+    "scripts": {
+        "dev:gulp": "gulp"
+    },
+    "devDependencies": {
+        "@vuepress/plugin-back-to-top": "^1.8.2",
+        "concurrently": "^7.2.1",
+        "eslint": "^8.3.0",
+        "gulp-css-format": "^0.1.2"
+    }
+}

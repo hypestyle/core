@@ -1,0 +1,47 @@
+.form-group {
+    margin-bottom: 1rem;
+
+    label {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    input,
+    textarea,
+    select, .form-control {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 0.25rem;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        &:focus {
+            outline: 0;
+            border-color: 0px;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+
+        &:disabled {
+            background-color: #e9ecef;
+        }
+
+        &::placeholder {
+            color: #ccc;
+        }
+
+        &:read-only {
+            background-color: #e9ecef;
+        }
+
+        .form-checkbox {
+            margin-right: 0.5rem;
+        }
+    }
+
+    .form-invalid:invalid {
+        border-color: #dc3545;
+    }
+
+    .form-valid:valid {
+        border-color: #28a745;
+    }
+}
