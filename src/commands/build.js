@@ -5,8 +5,6 @@
 
 const fs = require('fs')
 const path = require('path')
-const minify = require('cssmin')
-const { colors } = require('../colors')
 const chalk = require('chalk')
 
 const configFile = path.join(process.cwd(), 'hypestyle.config.js')
@@ -75,11 +73,6 @@ splitClasses.forEach((className) => {
         const matches = cssClasses.match(regex)
         if (matches) {
             matches.forEach((match) => {
-                // if the matches already exists, we don't need to add it again
-                if (!acc.includes(match)) {
-                    acc.push(match)
-                }
-
                 fs.appendFileSync(
                     path.join(
                         process.cwd(),
@@ -87,6 +80,7 @@ splitClasses.forEach((className) => {
                         require(configFile).settings.outFile ||
                             'hypestyle.build.css'
                     ),
+
                     match
                 )
             })
