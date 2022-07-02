@@ -7,14 +7,17 @@ const chalk = require('chalk')
 process.argv.forEach((cmd) => {
     if (cmd === 'build') {
         const files = fs
-            .readdirSync('./tests')
+            .readdirSync('./')
             .filter((file) => file.endsWith('.html'))
 
         const contents = files.map((file) => {
-            return fs.readFileSync(`./tests/${file}`, 'utf8')
+            return fs.readFileSync(`./${file}`, 'utf8')
         })
 
-        const cssFile = fs.readFileSync('./tests/hypestyle@0.1.9.css', 'utf8')
+        const cssFile = fs.readFileSync(
+            './lib/dist/css/hypestyle.min.css',
+            'utf8'
+        )
 
         const classes = contents
             .map((content) => {
@@ -36,34 +39,12 @@ process.argv.forEach((cmd) => {
                     matches.forEach((match) => {
                         console.log(chalk.yellow(match))
 
-                        const output = path.join('./tests', `outPut.css`)
+                        const output = path.join('./', `preBuild.css`)
 
                         fs.appendFileSync(output, match)
                     })
                 }
             }
-        })
-    } else if (cmd === '--watch') {
-        console.log(chalk.hex('#e55d3b').bold('Watching for changes...'))
-
-        const watcher = require('chokidar').watch('./tests', {
-            ignored: /(^|[\/\\])\../,
-            persistent: true,
-        })
-
-        watcher.on('change', (path) => {
-            console.log(`File ${path} has been changed`)
-
-            // run script
-            require('child_process').exec(
-                `pnpm run test build --watch`,
-                (err, stdout, stderr) => {
-                    if (err) {
-                        console.log(err)
-                    }
-                    console.log(stdout)
-                }
-            )
         })
     }
 })

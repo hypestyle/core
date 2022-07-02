@@ -48,4 +48,11 @@ program
         require('./commands/build')
     })
 
+program
+    .command('--watch')
+    .description('Watch the files and rebuild the CSS file.')
+    .action(() => {
+        require('./commands/watch')
+    })
+
 program.parse()

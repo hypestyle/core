@@ -8,7 +8,6 @@ const path = require('path')
 const minify = require('cssmin')
 const { colors } = require('../colors')
 const chalk = require('chalk')
-const { promisify } = require('util')
 
 const configFile = path.join(process.cwd(), 'hypestyle.config.js')
 const cssClasses = fs.readFileSync(
@@ -39,9 +38,21 @@ const files = fs
         )
     )
 
-const filesContents = files.map((file) => fs.readFileSync(file, 'utf8'))
+const contents = files.map((file) => fs.readFileSync(file, 'utf8'))
 
-const classes = filesContents
+class classConfig {
+    constructor(classes) {
+        this.classes = classes
+    }
+
+    splitClasses() {
+        return this.classes.map((className) => {
+            return className.split(' ')
+        })
+    }
+}
+
+const classes = contents
     .map((content) => {
         const regex = /class="([^"]+)"/g
         const matches = content.match(regex)
@@ -51,15 +62,34 @@ const classes = filesContents
         return acc.concat(curr)
     }, [])
 
-classes.forEach((className) => {
-    const regex = new RegExp(`\\.${className}\\s*{([^}]+)}`, 'g')
-    const matches = cssClasses.match(regex)
+const splitClasses = new classConfig(classes)
+    .splitClasses()
 
-    if (matches) {
-        matches.forEach((match) => {
-            console.log(chalk.yellowBright(`${match}`))
-        })
-    } else {
-        console.log(chalk.red(`No CSS found for ${className}`))
+    .reduce((acc, curr) => {
+        return acc.concat(curr)
+    }, [])
+
+splitClasses.forEach((className) => {
+    if (cssClasses.includes(className)) {
+        const regex = new RegExp(`\\.${className}\\s*{([^}]+)}`, 'g')
+        const matches = cssClasses.match(regex)
+        if (matches) {
+            matches.forEach((match) => {
+                // if the matches already exists, we don't need to add it again
+                if (!acc.includes(match)) {
+                    acc.push(match)
+                }
+
+                fs.appendFileSync(
+                    path.join(
+                        process.cwd(),
+                        require(configFile).settings.outDir || './',
+                        require(configFile).settings.outFile ||
+                            'hypestyle.build.css'
+                    ),
+                    match
+                )
+            })
+        }
     }
 })
