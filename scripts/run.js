@@ -1,28 +1,17 @@
-class Run {
-    constructor(cmd) {
-        this.cmd = cmd
-    }
+const runCmd = require('child_process').execSync
+const inquirer = require('inquirer')
+const chalk = require('chalk')
 
-    run() {
-        return new Promise((resolve, reject) => {
-            this.child = require('child_process').execSync(
-                this.cmd,
-                (err, stdout, stderr) => {
-                    if (err) {
-                        reject(err)
-                    }
-                    resolve(stdout)
-                }
-            )
-        })
-    }
+let questions = [
+    {
+        type: 'input',
+        name: 'cmdToRun',
+        message: 'What command would you like to run?',
+        default: 'pnpm cli',
+    },
+]
 
-    kill() {
-        this.child.kill()
-    }
-}
-
-let run = new Run('pnpm run cli version')
-run.run()
-
-module.exports = Run
+inquirer.prompt(questions).then((answers) => {
+    console.log(chalk.green(`Running ${answers.cmdToRun}`))
+    runCmd(`pnpm cli ${answers.cmdToRun}`, { stdio: 'inherit' })
+})
