@@ -9,7 +9,6 @@
         "hypestyle-cli": "src/index.js"
     },
     "scripts": {
-        "install:packages": "pnpm install",
         "cli": "node src/index.js"
     },
     "keywords": [],
