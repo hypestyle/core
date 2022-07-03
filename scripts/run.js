@@ -13,5 +13,5 @@ let questions = [
 
 inquirer.prompt(questions).then((answers) => {
     console.log(chalk.green(`Running ${answers.cmdToRun}`))
-    runCmd(`pnpm cli ${answers.cmdToRun}`, { stdio: 'inherit' })
+    runCmd(`pnpm run cli ${answers.cmdToRun}`, { stdio: 'inherit' })
 })

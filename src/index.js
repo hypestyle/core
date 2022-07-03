@@ -16,7 +16,9 @@ const program = new Command()
 program
     .name('Hypestyle CLI')
     .description('The CLI for hypestyle CSS')
-    .version(require('../package.json').version)
+    .version(
+        chalk.hex(colors.orange).bold('📦', require('../package.json').version)
+    )
     .on('command:*', function () {
         console.error(
             chalk.red(`Invalid command: ${chalk.gray(program.args.join(' '))}`)
@@ -49,7 +51,7 @@ program
     })
 
 program
-    .command('--watch')
+    .command('watch')
     .description('Watch the files and rebuild the CSS file.')
     .action(() => {
         require('./commands/watch')

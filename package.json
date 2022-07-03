@@ -9,7 +9,8 @@
         "hypestyle-cli": "src/index.js"
     },
     "scripts": {
-        "cli": "node scripts/run.js"
+        "cli:run": "node scripts/run.js",
+        "cli": "node src/index.js"
     },
     "keywords": [],
     "author": "",
@@ -30,4 +31,3 @@
         "eslint": "^8.18.0"
     }
 }
-

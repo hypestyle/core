@@ -13,6 +13,8 @@ const cssClasses = fs.readFileSync(
     'utf8'
 )
 
+let time = Date.now()
+
 if (!fs.existsSync(configFile)) {
     console.error(
         chalk.red(
@@ -87,3 +89,7 @@ splitClasses.forEach((className) => {
         }
     }
 })
+
+console.log(
+    chalk.green(`✅ Build done in ${chalk.gray(Date.now() - time, 'ms!')}`)
+)
