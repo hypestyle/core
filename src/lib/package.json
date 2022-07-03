@@ -1,7 +1,7 @@
 {
     "name": "@hypestyle/css",
     "description": "Small, useful CSS library build on utility classes & components.",
-    "version": "0.1.9",
+    "version": "0.2.3-beta.1",
     "main": "gulpfile.js",
     "repository": "https://github.com/hypestyle/HypeStyle.git",
     "homepage": "https://hypestyle.netlify.app/",
@@ -12,6 +12,7 @@
         "glob-parent": "5.1.2",
         "graceful-fs": "^4.2.8",
         "gulp": "^4.0.2",
+        "gulp-clean-css": "^4.3.0",
         "gulp-css-minify": "^0.9.2",
         "gulp-sass": "^5.0.0",
         "lodash": "4.17.21",
@@ -22,7 +23,8 @@
         "vuepress-theme-default-prefers-color-scheme": "^2.0.0"
     },
     "scripts": {
-        "dev:gulp": "gulp"
+        "dev:gulp": "gulp",
+        "publish": "npm publish --access public"
     },
     "devDependencies": {
         "@vuepress/plugin-back-to-top": "^1.8.2",

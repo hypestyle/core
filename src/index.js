@@ -47,7 +47,7 @@ program
     .command('build')
     .description('Build the CSS file.')
     .action(() => {
-        require('./commands/build')
+        require('./commands/build:classes')
     })
 
 program

@@ -5,12 +5,12 @@
 
 const { src, dest, watch, series } = require('gulp')
 const sass = require('gulp-sass')(require('sass'))
-const cssMinify = require('gulp-css-minify')
+const cleanCss = require('gulp-clean-css')
 
 function buildStyles() {
     return src('sass/**/*.scss')
         .pipe(sass())
-        .pipe(cssMinify())
+        .pipe(cleanCss())
         .pipe(dest('./dist/css'))
 }
 
