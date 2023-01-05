@@ -1,6 +1,0 @@
-/*
- - HypeStyle CSS v0.1.9 (https://www.hypestylecss.xyz)
- - Copyright 2022 Hypll LLC. / HypeStyle LABS
- - Licensed under MIT (https://github.com/hypestyle/hypestyle/blob/master/LICENSE)
- - This file was builded for hypestyle configuration, by the hypestyle-cli
- */
